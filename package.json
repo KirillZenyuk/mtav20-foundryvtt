@@ -1,0 +1,11 @@
+{
+  "name": "mtav20-foundryvtt",
+  "version": "0.0.1",
+  "description": "A FoundryVTT system for Mage: The Ascension v20",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kirill Zenyuk",
+  "license": "ISC"
+}
