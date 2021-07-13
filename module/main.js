@@ -65,7 +65,7 @@ Hooks.once('init', async function () {
 
   // TODO: There's gotta be a better way lol
   Handlebars.registerHelper('generateFeatureLabel', function (str) {
-    return (str === 'merit' ? 'MA20th.Merit' : 'MA20th.Flaw')
+    return (str === 'merit' ? 'MTAv20.Merit' : 'MTAv20.Flaw')
   })
 
   // TODO: there exist math helpers for handlebars
@@ -94,26 +94,27 @@ Hooks.once('init', async function () {
     return ret
   })
 
-  Handlebars.registerHelper('willpowerRollValue', function (willpower) {
+  Handlebars.registerHelper('willpowerRollValue', function (fake, willpowerData) {
+    const willpower = willpowerData.data.root.data.data.willpower
     return (willpower.max - willpower.spent)
   })
 
   Handlebars.registerHelper('getDisciplineName', function (key, roll = false) {
     const disciplines = {
-      animalism: 'MA20th.Animalism',
-      auspex: 'MA20th.Auspex',
-      celerity: 'MA20th.Celerity',
-      dominate: 'MA20th.Dominate',
-      fortitude: 'MA20th.Fortitude',
-      obfuscate: 'MA20th.Obfuscate',
-      potence: 'MA20th.Potence',
-      presence: 'MA20th.Presence',
-      protean: 'MA20th.Protean',
-      sorcery: 'MA20th.BloodSorcery',
-      oblivion: 'MA20th.Oblivion',
-      alchemy: 'MA20th.ThinBloodAlchemy',
-      rituals: 'MA20th.Rituals',
-      ceremonies: 'MA20th.Ceremonies'
+      animalism: 'MTAv20.Animalism',
+      auspex: 'MTAv20.Auspex',
+      celerity: 'MTAv20.Celerity',
+      dominate: 'MTAv20.Dominate',
+      fortitude: 'MTAv20.Fortitude',
+      obfuscate: 'MTAv20.Obfuscate',
+      potence: 'MTAv20.Potence',
+      presence: 'MTAv20.Presence',
+      protean: 'MTAv20.Protean',
+      sorcery: 'MTAv20.BloodSorcery',
+      oblivion: 'MTAv20.Oblivion',
+      alchemy: 'MTAv20.ThinBloodAlchemy',
+      rituals: 'MTAv20.Rituals',
+      ceremonies: 'MTAv20.Ceremonies'
     }
     if (roll) {
       if (key === 'rituals') {

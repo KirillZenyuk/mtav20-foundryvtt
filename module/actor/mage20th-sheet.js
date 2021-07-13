@@ -15,113 +15,113 @@
         tabs: [{ navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'stats' }]
       })
     }
-  
+
     /* -------------------------------------------- */
-  
+
     /** @override */
     getData () {
       const data = super.getData()
       // TODO: confirm that I can finish and use this list
       const BLOOD_POTENCY = [
         {
-          surge: game.i18n.localize('MA20th.Add1Dice'),
-          mend: game.i18n.localize('MA20th.1SuperficialDamage'),
-          power: game.i18n.localize('MA20th.None'),
-          rouse: game.i18n.localize('MA20th.None'),
+          surge: game.i18n.localize('MTAv20.Add1Dice'),
+          mend: game.i18n.localize('MTAv20.1SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.None'),
+          rouse: game.i18n.localize('MTAv20.None'),
           bane: '0',
-          feeding: game.i18n.localize('MA20th.NoEffect')
+          feeding: game.i18n.localize('MTAv20.NoEffect')
         },
         {
-          surge: game.i18n.localize('MA20th.Add2Dice'),
-          mend: game.i18n.localize('MA20th.1SuperficialDamage'),
-          power: game.i18n.localize('MA20th.None'),
-          rouse: game.i18n.localize('MA20th.Level1'),
+          surge: game.i18n.localize('MTAv20.Add2Dice'),
+          mend: game.i18n.localize('MTAv20.1SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.None'),
+          rouse: game.i18n.localize('MTAv20.Level1'),
           bane: '2',
-          feeding: game.i18n.localize('MA20th.NoEffect')
+          feeding: game.i18n.localize('MTAv20.NoEffect')
         },
         {
-          surge: game.i18n.localize('MA20th.Add2Dice'),
-          mend: game.i18n.localize('MA20th.2SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add1Dice'),
-          rouse: game.i18n.localize('MA20th.Level1'),
+          surge: game.i18n.localize('MTAv20.Add2Dice'),
+          mend: game.i18n.localize('MTAv20.2SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add1Dice'),
+          rouse: game.i18n.localize('MTAv20.Level1'),
           bane: '2',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty1')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty1')
         },
         {
-          surge: game.i18n.localize('MA20th.Add3Dice'),
-          mend: game.i18n.localize('MA20th.2SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add1Dice'),
-          rouse: game.i18n.localize('MA20th.Level2'),
+          surge: game.i18n.localize('MTAv20.Add3Dice'),
+          mend: game.i18n.localize('MTAv20.2SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add1Dice'),
+          rouse: game.i18n.localize('MTAv20.Level2'),
           bane: '3',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty2')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty2')
         },
         {
-          surge: game.i18n.localize('MA20th.Add3Dice'),
-          mend: game.i18n.localize('MA20th.3SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add2Dice'),
-          rouse: game.i18n.localize('MA20th.Level2'),
+          surge: game.i18n.localize('MTAv20.Add3Dice'),
+          mend: game.i18n.localize('MTAv20.3SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add2Dice'),
+          rouse: game.i18n.localize('MTAv20.Level2'),
           bane: '3',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty3')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty3')
         },
         {
-          surge: game.i18n.localize('MA20th.Add4Dice'),
-          mend: game.i18n.localize('MA20th.3SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add2Dice'),
-          rouse: game.i18n.localize('MA20th.Level3'),
+          surge: game.i18n.localize('MTAv20.Add4Dice'),
+          mend: game.i18n.localize('MTAv20.3SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add2Dice'),
+          rouse: game.i18n.localize('MTAv20.Level3'),
           bane: '4',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty4')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty4')
         },
         {
-          surge: game.i18n.localize('MA20th.Add4Dice'),
-          mend: game.i18n.localize('MA20th.3SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add3Dice'),
-          rouse: game.i18n.localize('MA20th.Level3'),
+          surge: game.i18n.localize('MTAv20.Add4Dice'),
+          mend: game.i18n.localize('MTAv20.3SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add3Dice'),
+          rouse: game.i18n.localize('MTAv20.Level3'),
           bane: '4',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty5')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty5')
         },
         {
-          surge: game.i18n.localize('MA20th.Add5Dice'),
-          mend: game.i18n.localize('MA20th.3SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add3Dice'),
-          rouse: game.i18n.localize('MA20th.Level4'),
+          surge: game.i18n.localize('MTAv20.Add5Dice'),
+          mend: game.i18n.localize('MTAv20.3SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add3Dice'),
+          rouse: game.i18n.localize('MTAv20.Level4'),
           bane: '5',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty5')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty5')
         },
         {
-          surge: game.i18n.localize('MA20th.Add5Dice'),
-          mend: game.i18n.localize('MA20th.4SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add4Dice'),
-          rouse: game.i18n.localize('MA20th.Level4'),
+          surge: game.i18n.localize('MTAv20.Add5Dice'),
+          mend: game.i18n.localize('MTAv20.4SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add4Dice'),
+          rouse: game.i18n.localize('MTAv20.Level4'),
           bane: '5',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty6')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty6')
         },
         {
-          surge: game.i18n.localize('MA20th.Add6Dice'),
-          mend: game.i18n.localize('MA20th.4SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add4Dice'),
-          rouse: game.i18n.localize('MA20th.Level5'),
+          surge: game.i18n.localize('MTAv20.Add6Dice'),
+          mend: game.i18n.localize('MTAv20.4SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add4Dice'),
+          rouse: game.i18n.localize('MTAv20.Level5'),
           bane: '6',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty6')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty6')
         },
         {
-          surge: game.i18n.localize('MA20th.Add6Dice'),
-          mend: game.i18n.localize('MA20th.5SuperficialDamage'),
-          power: game.i18n.localize('MA20th.Add5Dice'),
-          rouse: game.i18n.localize('MA20th.Level5'),
+          surge: game.i18n.localize('MTAv20.Add6Dice'),
+          mend: game.i18n.localize('MTAv20.5SuperficialDamage'),
+          power: game.i18n.localize('MTAv20.Add5Dice'),
+          rouse: game.i18n.localize('MTAv20.Level5'),
           bane: '6',
-          feeding: game.i18n.localize('MA20th.FeedingPenalty7')
+          feeding: game.i18n.localize('MTAv20.FeedingPenalty7')
         }
       ]
       data.dtypes = ['String', 'Number', 'Boolean']
-  
+
       // Prepare items.
       if (this.actor.data.type === 'character') {
         this._prepareCharacterItems(data)
         this._prepareCharacterAbilities(data)
       }
-  
+
       data.blood_potency = BLOOD_POTENCY
-  
+
       return data
     }
 
@@ -133,7 +133,7 @@
        * @return {undefined}
        */
      _prepareCharacterAbilities (sheetData) {
-        const actorData = sheetData.data.abilities
+        const actorData = sheetData.data.data.abilities
 
         if (actorData.strength.value === 0) {
           actorData.strength.value = 1
@@ -165,7 +165,7 @@
      }
 
 
-  
+
     /**
        * Organize and classify Items for Character sheets.
        *
@@ -175,7 +175,7 @@
        */
     _prepareCharacterItems (sheetData) {
       const actorData = sheetData.actor
-  
+
       // Initialize containers.
       const backgrounds = []
       const specialties = []
@@ -200,7 +200,7 @@
         ceremonies: [],
         alchemy: []
       }
-  
+
       // Iterate through items, allocating to containers
       for (const i of sheetData.items) {
         i.img = i.img || DEFAULT_TOKEN
@@ -226,7 +226,7 @@
           }
         }
       }
-  
+
       // Assign and return
       actorData.specialties = specialties
       actorData.gear = gear
@@ -234,50 +234,50 @@
       actorData.disciplines_list = disciplines
       actorData.backgrounds = backgrounds;
     }
-  
+
     /* -------------------------------------------- */
-  
+
     /** @override */
     activateListeners (html) {
       super.activateListeners(html)
-  
+
       this._setupDotCounters(html)
       this._setupSquareCounters(html)
       this._setupSquareCountersSyb(html)
       this._setupSquareCounters2cf(html)
-  
+
       // Everything below here is only needed if the sheet is editable
       if (!this.options.editable) return
-  
+
       // Make Discipline visible
       html.find('.discipline-create').click(this._onShowDiscipline.bind(this))
-  
+
       // Make Discipline hidden
       html.find('.discipline-delete').click(ev => {
         const data = $(ev.currentTarget)[0].dataset
         this.actor.update({ [`data.disciplines.${data.discipline}.visible`]: false })
       })
-  
+
       // Add Inventory Item
       html.find('.item-create').click(this._onItemCreate.bind(this))
-  
+
       // Update Inventory Item
       html.find('.item-edit').click(ev => {
         const li = $(ev.currentTarget).parents('.item')
         const item = this.actor.getOwnedItem(li.data('itemId'))
         item.sheet.render(true)
       })
-  
+
       // Delete Inventory Item
       html.find('.item-delete').click(ev => {
         const li = $(ev.currentTarget).parents('.item')
         this.actor.deleteOwnedItem(li.data('itemId'))
         li.slideUp(200, () => this.render(false))
       })
-  
+
       // Rollable abilities.
       html.find('.rollable').click(this._onRoll.bind(this))
-  
+
       // Rollable Vampire abilities.
       html.find('.vrollable').click(this._onVampireRollDialog.bind(this))
 
@@ -286,7 +286,7 @@
 
       // Rollable Abilities
       html.find('.abilityrollable').click(this._onAbilityRollDialog.bind(this))
-  
+
       html.find('.resource-value > .resource-value-step').click(this._onDotCounterChange.bind(this))
       html.find('.resource-value > .resource-value-empty').click(this._onDotCounterEmpty.bind(this))
       html.find('.resource-counter > .resource-counter-step').click(this._onSquareCounterChange.bind(this))
@@ -296,8 +296,8 @@
 
       html.find('.resource-counter-syb > .resource-counter-syb-step').click(this._onSquareSybCounterChange.bind(this))
       html.find('.resource-button').click(this._onSquare2cfCounterChange.bind(this))
-      
-  
+
+
       // Drag events for macros.
       // if (this.actor.owner) {
       //   let handler = ev => this._onDragItemStart(ev);
@@ -307,11 +307,11 @@
       //     li.addEventListener("dragstart", handler, false);
       //   });
       // }
-  
+
       // Collapsible Vampire powers
       const coll = document.getElementsByClassName('collapsible')
       let i
-  
+
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener('click', function () {
           this.classList.toggle('active')
@@ -324,7 +324,7 @@
         })
       }
     }
-  
+
     /**
        * Handle making a discipline visible
        * @param {Event} event   The originating click event
@@ -336,20 +336,20 @@
       for (const [key, value] of Object.entries(this.actor.data.data.disciplines)) {
         options = options.concat(`<option value="${key}">${game.i18n.localize(value.name)}</option>`)
       }
-  
+
       const template = `
         <form>
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.SelectDiscipline')}</label>
+                <label>${game.i18n.localize('MTAv20.SelectDiscipline')}</label>
                 <select id="disciplineSelect">${options}</select>
             </div>
         </form>`
-  
+
       let buttons = {}
       buttons = {
         draw: {
           icon: '<i class="fas fa-check"></i>',
-          label: game.i18n.localize('MA20th.Add'),
+          label: game.i18n.localize('MTAv20.Add'),
           callback: async (html) => {
             const discipline = html.find('#disciplineSelect')[0].value
             this.actor.update({ [`data.disciplines.${discipline}.visible`]: true })
@@ -357,18 +357,18 @@
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: game.i18n.localize('MA20th.Cancel')
+          label: game.i18n.localize('MTAv20.Cancel')
         }
       }
-  
+
       new Dialog({
-        title: game.i18n.localize('MA20th.AddDiscipline'),
+        title: game.i18n.localize('MTAv20.AddDiscipline'),
         content: template,
         buttons: buttons,
         default: 'draw'
       }).render(true)
     }
-  
+
     /**
        * Handle creating a new Owned Item for the actor using initial data defined in the HTML dataset
        * @param {Event} event   The originating click event
@@ -394,11 +394,11 @@
       }
       // Remove the type from the dataset since it's in the itemData.type prop.
       delete itemData.data.type
-  
+
       // Finally, create the item!
       return this.actor.createOwnedItem(itemData)
     }
-  
+
     /**
        * Handle clickable rolls.
        * @param {Event} event   The originating click event
@@ -408,15 +408,15 @@
       event.preventDefault()
       const element = event.currentTarget
       const dataset = element.dataset
-  
+
       if (dataset.roll) {
         const roll = new Roll(dataset.roll + 'dvcs>5', this.actor.data.data)
         const rollResult = roll.evaluate()
-  
+
         let success = 0
         let critSuccess = 0
         let fail = 0
-  
+
         rollResult.terms[0].results.forEach((dice) => {
           if (dice.success) {
             if (dice.result === 10) {
@@ -428,19 +428,19 @@
             fail++
           }
         })
-  
+
         let totalCritSuccess = 0
         totalCritSuccess = Math.floor(critSuccess / 2)
         const totalSuccess = (totalCritSuccess * 2) + success + critSuccess
-  
+
         let label = dataset.label ? `<p class="roll-label uppercase">${dataset.label}</p>` : ''
-  
+
         if (totalCritSuccess) {
-          label = label + `<p class="roll-content">${game.i18n.localize('MA20th.CriticalSuccess')}</p>`
+          label = label + `<p class="roll-content">${game.i18n.localize('MTAv20.CriticalSuccess')}</p>`
         }
-  
-        label = label + `<p class="roll-label">${game.i18n.localize('MA20th.Successes')}: ${totalSuccess}</p>`
-  
+
+        label = label + `<p class="roll-label">${game.i18n.localize('MTAv20.Successes')}: ${totalSuccess}</p>`
+
         for (let i = 0, j = critSuccess; i < j; i++) {
           label = label + '<img src="systems/ma20th/assets/images/normal-crit.png" alt="Normal Crit" class="roll-img">'
         }
@@ -450,7 +450,7 @@
         for (let i = 0, j = fail; i < j; i++) {
           label = label + '<img src="systems/ma20th/assets/images/normal-fail.png" alt="Normal Fail" class="roll-img">'
         }
-  
+
         rollResult.toMessage({
           speaker: ChatMessage.getSpeaker({ actor: this.actor }),
           flavor: label
@@ -461,7 +461,7 @@
     _lifeModifier () {
       var modifier = 0;
       let currentLife = this.actor.data.data.health.total
-     
+
       if ((currentLife > 1) && (currentLife <= 3)) {
         modifier = -1;
       } else if ((currentLife > 3) && (currentLife <= 5)){
@@ -472,38 +472,38 @@
 
       return modifier;
     }
-    
+
     _defaultRoll (numDices, dificulty, modifier, rollTitle = '' ,isProf = false) {
       // Default Roll
       let roll = new Roll(`${numDices + modifier}d10cs>=${dificulty}df=1`).roll();
       let title = game.i18n.localize(rollTitle);
-	
+
       roll.toMessage({
         user: game.user._id,
-        flavor: `${game.i18n.localize('MA20th.Roll')}: ${title}.`,
+        flavor: `${game.i18n.localize('MTAv20.Roll')}: ${title}.`,
         speaker: ChatMessage.getSpeaker({token: this.token}),
       });
-      
+
       // Proficient Roll
       const profRoll = roll.terms[0].results.filter(e => e.result === 10);
       if (isProf && (profRoll.length > 0)){
         let rollProf = new Roll(`${profRoll.length}d10cs>=${dificulty}df=1`).roll();
-      
+
         rollProf.toMessage({
           user: game.user._id,
-          flavor: `${game.i18n.localize('MA20th.Proficient')}: ${title}.`,
+          flavor: `${game.i18n.localize('MTAv20.Proficient')}: ${title}.`,
           speaker: ChatMessage.getSpeaker({token: this.token}),
         });
       }
     }
-  
+
     // roll helper
     _vampireRoll (numDice, actor, label = '', difficulty = 0) {
       const hungerDice = Math.min(actor.data.data.hunger.value, numDice)
       const dice = numDice - hungerDice
       const roll = new Roll(dice + 'dvcs>5 + ' + hungerDice + 'dhcs>5', actor.data.data)
       const rollResult = roll.evaluate()
-  
+
       let difficultyResult = '<span></span>'
       let success = 0
       let hungerSuccess = 0
@@ -512,7 +512,7 @@
       let fail = 0
       let hungerFail = 0
       let hungerCritFail = 0
-  
+
       rollResult.terms[0].results.forEach((dice) => {
         if (dice.success) {
           if (dice.result === 10) {
@@ -524,7 +524,7 @@
           fail++
         }
       })
-  
+
       rollResult.terms[2].results.forEach((dice) => {
         if (dice.success) {
           if (dice.result === 10) {
@@ -540,35 +540,35 @@
           }
         }
       })
-  
+
       let totalCritSuccess = 0
       totalCritSuccess = Math.floor((critSuccess + hungerCritSuccess) / 2)
       const totalSuccess = (totalCritSuccess * 2) + success + hungerSuccess + critSuccess + hungerCritSuccess
       let successRoll = false
       if (difficulty !== 0) {
         successRoll = totalSuccess >= difficulty
-        difficultyResult = `( <span class="danger">${game.i18n.localize('MA20th.Fail')}</span> )`
+        difficultyResult = `( <span class="danger">${game.i18n.localize('MTAv20.Fail')}</span> )`
         if (successRoll) {
-          difficultyResult = `( <span class="success">${game.i18n.localize('MA20th.Success')}</span> )`
+          difficultyResult = `( <span class="success">${game.i18n.localize('MTAv20.Success')}</span> )`
         }
       }
-  
+
       label = `<p class="roll-label uppercase">${label}</p>`
-  
+
       if (hungerCritSuccess && totalCritSuccess) {
-        label = label + `<p class="roll-content">${game.i18n.localize('MA20th.MessyCritical')}</p>`
+        label = label + `<p class="roll-content">${game.i18n.localize('MTAv20.MessyCritical')}</p>`
       } else if (totalCritSuccess) {
-        label = label + `<p class="roll-content">${game.i18n.localize('MA20th.CriticalSuccess')}</p>`
+        label = label + `<p class="roll-content">${game.i18n.localize('MTAv20.CriticalSuccess')}</p>`
       }
       if (hungerCritFail && !successRoll && difficulty > 0) {
-        label = label + `<p class="roll-content">${game.i18n.localize('MA20th.BestialFailure')}</p>`
+        label = label + `<p class="roll-content">${game.i18n.localize('MTAv20.BestialFailure')}</p>`
       }
       if (hungerCritFail && !successRoll && difficulty === 0) {
-        label = label + `<p class="roll-content">${game.i18n.localize('MA20th.PossibleBestialFailure')}</p>`
+        label = label + `<p class="roll-content">${game.i18n.localize('MTAv20.PossibleBestialFailure')}</p>`
       }
-  
-      label = label + `<p class="roll-label">${game.i18n.localize('MA20th.Successes')}: ${totalSuccess} ${difficultyResult}</p>`
-  
+
+      label = label + `<p class="roll-label">${game.i18n.localize('MTAv20.Successes')}: ${totalSuccess} ${difficultyResult}</p>`
+
       for (let i = 0, j = critSuccess; i < j; i++) {
         label = label + '<img src="systems/ma20th/assets/images/normal-crit.png" alt="Normal Crit" class="roll-img">'
       }
@@ -578,9 +578,9 @@
       for (let i = 0, j = fail; i < j; i++) {
         label = label + '<img src="systems/ma20th/assets/images/normal-fail.png" alt="Normal Fail" class="roll-img">'
       }
-  
+
       label = label + '<br>'
-  
+
       for (let i = 0, j = hungerCritSuccess; i < j; i++) {
         label = label + '<img src="systems/ma20th/assets/images/red-crit.png" alt="Hunger Crit" class="roll-img">'
       }
@@ -593,7 +593,7 @@
       for (let i = 0, j = hungerFail; i < j; i++) {
         label = label + '<img src="systems/ma20th/assets/images/red-fail.png" alt="Hunger Fail" class="roll-img">'
       }
-  
+
       rollResult.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: actor }),
         flavor: label
@@ -611,39 +611,39 @@
       const element = event.currentTarget
       // Get Skills properties: { label: name, roll: values }
       const skillProperties = element.dataset
-      
+
       let options = '';
       for (const [key, value] of Object.entries(this.actor.data.data.abilities)) {
         options = options.concat(`<option value="${key}">${game.i18n.localize(value.name)}</option>`)
       }
 
       let lifeModifier = this._lifeModifier();
-  
+
       const template = `
         <form>
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.SelectAbility')}</label>
+                <label>${game.i18n.localize('MTAv20.SelectAbility')}</label>
                 <select id="abilitySelect">${options}</select>
             </div>
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.Difficulty')}</label>
+                <label>${game.i18n.localize('MTAv20.Difficulty')}</label>
                 <input type="text" min="0" id="inputDif" value="6">
             </div>  
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.Modifier')}</label>
+                <label>${game.i18n.localize('MTAv20.Modifier')}</label>
                 <input type="text" id="inputMod" value="${lifeModifier}">
             </div>  
             <div>
-              <label>${game.i18n.localize('MA20th.Proficient')}</label>
+              <label>${game.i18n.localize('MTAv20.Proficient')}</label>
               <input type="checkbox" id="inputProf">
             </div>
         </form>`
-  
+
       let buttons = {}
       buttons = {
         draw: {
           icon: '<i class="fas fa-check"></i>',
-          label: game.i18n.localize('MA20th.Roll'),
+          label: game.i18n.localize('MTAv20.Roll'),
           callback: async (html) => {
             const ability = html.find('#abilitySelect')[0].value
             const modifier = parseInt(html.find('#inputMod')[0].value || 0)
@@ -657,12 +657,12 @@
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: game.i18n.localize('MA20th.Cancel')
+          label: game.i18n.localize('MTAv20.Cancel')
         }
       }
-  
+
       new Dialog({
-        title: `${game.i18n.localize('MA20th.Rolling')}   ${game.i18n.localize(skillProperties.label)}...`,
+        title: `${game.i18n.localize('MTAv20.Rolling')}   ${game.i18n.localize(skillProperties.label)}...`,
         content: template,
         buttons: buttons,
         default: 'draw'
@@ -682,24 +682,24 @@
       const abilityProperties = element.dataset
 
       let lifeModifier = this._lifeModifier();
-  
+
       const template = `
         <form>
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.Difficulty')}</label>
+                <label>${game.i18n.localize('MTAv20.Difficulty')}</label>
                 <input type="text" min="0" id="inputDif" value="6">
             </div>
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.Modifier')}</label>
+                <label>${game.i18n.localize('MTAv20.Modifier')}</label>
                 <input type="text" id="inputMod" value="${lifeModifier}">
             </div>   
         </form>`
-  
+
       let buttons = {}
       buttons = {
         draw: {
           icon: '<i class="fas fa-check"></i>',
-          label: game.i18n.localize('MA20th.Roll'),
+          label: game.i18n.localize('MTAv20.Roll'),
           callback: async (html) => {
             const abilityName = abilityProperties.label
             const difficulty = parseInt(html.find('#inputDif')[0].value || 6)
@@ -711,18 +711,18 @@
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: game.i18n.localize('MA20th.Cancel')
+          label: game.i18n.localize('MTAv20.Cancel')
         }
       }
-  
+
       new Dialog({
-        title: `${game.i18n.localize('MA20th.Rolling')}   ${game.i18n.localize(abilityProperties.label)}...`,
+        title: `${game.i18n.localize('MTAv20.Rolling')}   ${game.i18n.localize(abilityProperties.label)}...`,
         content: template,
         buttons: buttons,
         default: 'draw'
       }).render(true)
     }
-  
+
     /**
        * Handle clickable Vampire rolls.
        * @param {Event} event   The originating click event
@@ -737,28 +737,28 @@
       for (const [key, value] of Object.entries(this.actor.data.data.abilities)) {
         options = options.concat(`<option value="${key}">${game.i18n.localize(value.name)}</option>`)
       }
-  
+
       const template = `
         <form>
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.SelectAbility')}</label>
+                <label>${game.i18n.localize('MTAv20.SelectAbility')}</label>
                 <select id="abilitySelect">${options}</select>
             </div>  
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.Modifier')}</label>
+                <label>${game.i18n.localize('MTAv20.Modifier')}</label>
                 <input type="text" id="inputMod" value="0">
             </div>  
             <div class="form-group">
-                <label>${game.i18n.localize('MA20th.Difficulty')}</label>
+                <label>${game.i18n.localize('MTAv20.Difficulty')}</label>
                 <input type="text" min="0" id="inputDif" value="0">
             </div>
         </form>`
-  
+
       let buttons = {}
       buttons = {
         draw: {
           icon: '<i class="fas fa-check"></i>',
-          label: game.i18n.localize('MA20th.Roll'),
+          label: game.i18n.localize('MTAv20.Roll'),
           callback: async (html) => {
             const ability = html.find('#abilitySelect')[0].value
             const modifier = parseInt(html.find('#inputMod')[0].value || 0)
@@ -771,18 +771,18 @@
         },
         cancel: {
           icon: '<i class="fas fa-times"></i>',
-          label: game.i18n.localize('MA20th.Cancel')
+          label: game.i18n.localize('MTAv20.Cancel')
         }
       }
-  
+
       new Dialog({
-        title: game.i18n.localize('MA20th.Rolling') + ` ${dataset.label}...`,
+        title: game.i18n.localize('MTAv20.Rolling') + ` ${dataset.label}...`,
         content: template,
         buttons: buttons,
         default: 'draw'
       }).render(true)
     }
-  
+
     _onVampireRoll (event) {
       event.preventDefault()
       const element = event.currentTarget
@@ -801,7 +801,7 @@
       const dicePool = dice1 + dice2
       this._vampireRoll(dicePool, this.actor, `${item.data.name}`)
     }
-  
+
     // There's gotta be a better way to do this but for the life of me I can't figure it out
     _assignToActorField (fields, value) {
       const actorData = duplicate(this.actor)
@@ -809,7 +809,7 @@
       fields.reduce((data, field) => data[field], actorData)[lastField] = value
       this.actor.update(actorData)
     }
-  
+
     _onDotCounterEmpty (event) {
       event.preventDefault()
       const element = event.currentTarget
@@ -817,11 +817,11 @@
       const fieldStrings = parent[0].dataset.name
       const fields = fieldStrings.split('.')
       const steps = parent.find('.resource-value-empty')
-  
+
       steps.removeClass('active')
       this._assignToActorField(fields, 0)
     }
-  
+
     _onSquareCounterChange (event) {
       event.preventDefault()
       const element = event.currentTarget
@@ -848,39 +848,39 @@
       if (steps.length === 0) {
         steps = parent.find('.resource-vitality-step')
       }
-  
+
       if (index < 0 || index > steps.length) {
         return
       }
-  
+
       const allStates = ['', ...Object.keys(states)]
       const currentState = allStates.indexOf(oldState)
       if (currentState < 0) {
         return
       }
-  
+
       const newState = allStates[(currentState + 1) % allStates.length]
       steps[index].dataset.state = newState
-  
+
       if ((oldState !== '' && oldState !== '-') || (oldState !== '' && humanity)) {
         data[states[oldState]] = Number(data[states[oldState]]) - 1
       }
-  
+
       // If the step was removed we also need to subtract from the maximum.
       if (oldState !== '' && newState === '' && !humanity) {
         data[states['-']] = Number(data[states['-']]) - 1
       }
-  
+
       if (newState !== '') {
         data[states[newState]] = Number(data[states[newState]]) + Math.max(index + 1 - fulls - halfs - crossed, 1)
       }
-  
+
       const newValue = Object.values(states).reduce(function (obj, k) {
         obj[k] = Number(data[k]) || 0
 
         return obj
       }, {})
-  
+
       this._assignToActorField(fields, newValue)
     }
 
@@ -896,38 +896,38 @@
       var steps = parent.find('.resource-counter-syb-step')
       const halfs = Number(data[states['/']]) || 0
       const crossed = Number(data[states.x]) || 0
-  
+
       if (index < 0 || index > steps.length) {
         return
       }
-  
+
       const allStates = ['', ...Object.keys(states)]
       const currentState = allStates.indexOf(oldState)
       if (currentState < 0) {
         return
       }
-  
+
       const newState = allStates[(currentState + 1) % allStates.length]
       steps[index].dataset.state = newState
-  
+
       if ((oldState !== '' && oldState !== '-') || (oldState !== '')) {
         data[states[oldState]] = Number(data[states[oldState]]) - 1
       }
-  
+
       // If the step was removed we also need to subtract from the maximum.
       if (oldState !== '' && newState === '') {
         data[states['-']] = Number(data[states['-']]) - 1
       }
-  
+
       if (newState !== '') {
         data[states[newState]] = Number(data[states[newState]]) + Math.max(index + 1 - halfs - crossed, 1)
       }
-  
+
       const newValue = Object.values(states).reduce(function (obj, k) {
         obj[k] = Number(data[k]) || 0
         return obj
       }, {})
-  
+
       this._assignToActorField(fields, newValue)
     }
 
@@ -964,7 +964,7 @@
         }
       }
     }
-  
+
     _onDotCounterChange (event) {
       event.preventDefault()
       const element = event.currentTarget
@@ -977,7 +977,7 @@
       if (index < 0 || index > steps.length) {
         return
       }
-  
+
       steps.removeClass('active')
       steps.each(function (i) {
         if (i <= index) {
@@ -986,7 +986,7 @@
       })
       this._assignToActorField(fields, index + 1)
     }
-  
+
     _setupDotCounters (html) {
       html.find('.resource-value').each(function () {
         const value = Number(this.dataset.value)
@@ -997,17 +997,17 @@
         })
       })
     }
-  
+
     _setupSquareCounters (html) {
       html.find('.resource-counter').each(function () {
         const data = this.dataset
         const states = parseCounterStates(data.states)
         const humanity = data.name === 'data.humanity'
-  
+
         const fulls = Number(data[states['-']]) || 0
         const halfs = Number(data[states['/']]) || 0
         const crossed = Number(data[states.x]) || 0
-  
+
         const values = humanity ? new Array(fulls + halfs) : new Array(fulls)
         values.fill('-', 0, fulls)
         if (humanity) {
@@ -1016,7 +1016,7 @@
           values.fill('/', fulls - halfs - crossed, fulls - crossed)
           values.fill('x', fulls - crossed, fulls)
         }
-  
+
         $(this).find('.resource-counter-step').each(function () {
           this.dataset.state = ''
           if (this.dataset.index < values.length) {
@@ -1051,10 +1051,10 @@
       html.find('.resource-counter-syb').each(function () {
         const data = this.dataset
         const states = parseCounterStates(data.states)
-  
+
         const halfs = Number(data[states['/']]) || 0
         const crossed = Number(data[states.x]) || 0
-  
+
         const values = new Array(halfs)
         values.fill('/', 0, halfs)
         values.fill('x', halfs - crossed, halfs)
@@ -1072,10 +1072,10 @@
       html.find('.resource-counter-2cf').each(function () {
         const data = this.dataset
         const states = parseCounterStates(data.states)
-  
+
         const fulls = Number(data[states['-']]) || 0
         const halfs = Number(data[states['/']]) || 0
-  
+
         const values = new Array(20)
 
         values.fill('-', 0, fulls)
@@ -1090,7 +1090,7 @@
       })
     }
   }
-  
+
   function parseCounterStates (states) {
     return states.split(',').reduce((obj, state) => {
       const [k, v] = state.split(':')
@@ -1098,4 +1098,3 @@
       return obj
     }, {})
   }
-  
