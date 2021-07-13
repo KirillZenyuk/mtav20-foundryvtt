@@ -147,24 +147,24 @@
 }
 
 /* New Styles */
-.ma20th .window-content {
+.MTAv20 .window-content {
   background: #faf5ed;
   font-family: "cormorantLight", sans-serif;
   font-weight: 600;
 }
 
-.ma20th .profile-img,
-.ma20th .item-image img {
+.MTAv20 .profile-img,
+.MTAv20 .item-image img {
   background: #0B108C;
 }
 
-.ma20th input {
+.MTAv20 input {
   font-family: initial;
   background: white;
   border: 1px solid #e0dede;
 }
 
-.ma20th button.rollable {
+.MTAv20 button.rollable {
   background: #0B108C;
   color: white;
   font-family: "cormorantlight", sans-serif;
@@ -172,21 +172,21 @@
   border: none;
 }
 
-.ma20th .resource-label {
+.MTAv20 .resource-label {
   font-weight: bold;
 }
 
-.ma20th .window-content .resource-label {
+.MTAv20 .window-content .resource-label {
   text-transform: initial;
   font-size: 16px;
 }
 
-.ma20th .window-content .abilities .ability .resource-label {
+.MTAv20 .window-content .abilities .ability .resource-label {
   font-weight: bold;
   font-size: 18px;
 }
 
-.ma20th .window-content nav.sheet-tabs {
+.MTAv20 .window-content nav.sheet-tabs {
   background: #e6ded0;
   color: #0B108C;
   font-size: 16px;
@@ -195,22 +195,22 @@
   height: 41px;
 }
 
-.ma20th .window-content nav.sheet-tabs a.item.active {
+.MTAv20 .window-content nav.sheet-tabs a.item.active {
   background: #faf5ed;
   text-decoration: none;
 }
 
-.ma20th .window-content .header-fields .resource {
+.MTAv20 .window-content .header-fields .resource {
   border: 1px solid #d6d6d2;
   border-radius: 5px;
 }
 
-.ma20th .window-content .abilities,
-.ma20th.sheet.actor .window-content .skills {
+.MTAv20 .window-content .abilities,
+.MTAv20.sheet.actor .window-content .skills {
   border: none;
 }
 
-.ma20th .window-content .sheet-body .tab > .resource-label {
+.MTAv20 .window-content .sheet-body .tab > .resource-label {
   color: #0B108C;
   border-bottom: 1px solid #0B108C;
   width: 100%;
@@ -218,13 +218,13 @@
   text-transform: uppercase;
 }
 
-/* Styles limited to ma20th sheets */
+/* Styles limited to MTAv20 sheets */
 
-/* .ma20th .item-form {
+/* .MTAv20 .item-form {
   font-family: "Roboto", sans-serif;
 } */
 
-.ma20th .sheet-header {
+.MTAv20 .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 220px;
   flex: 0 0 220px;
@@ -244,7 +244,7 @@
   margin-bottom: 0px;
 }
 
-.ma20th .sheet-header .profile-img {
+.MTAv20 .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
   flex: 0 0 100px;
@@ -255,75 +255,75 @@
   margin-right: 10px;
 }
 
-.ma20th .sheet-header .header-fields {
+.MTAv20 .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.ma20th .sheet-header h1.charname {
+.MTAv20 .sheet-header h1.charname {
   height: 50px;
   padding: 0;
   margin: 5px 0;
   border-bottom: 0;
 }
 
-.ma20th .sheet-header h1.charname input {
+.MTAv20 .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.ma20th .sheet-tabs {
+.MTAv20 .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
 
-.ma20th .sheet-body,
-.ma20th .sheet-body .tab,
-.ma20th .sheet-body .tab .editor {
+.MTAv20 .sheet-body,
+.MTAv20 .sheet-body .tab,
+.MTAv20 .sheet-body .tab .editor {
   height: 100%;
 
   /* min-height: 100px; */
 }
 
-.ma20th .sheet-body .tab .half-height {
+.MTAv20 .sheet-body .tab .half-height {
   height: 50%;
 }
 
-.ma20th .tox .tox-editor-container {
+.MTAv20 .tox .tox-editor-container {
   background: #fff;
 }
 
-.ma20th .tox .tox-edit-area {
+.MTAv20 .tox .tox-edit-area {
   padding: 0 8px;
 }
 
-.ma20th .tabs {
+.MTAv20 .tabs {
   height: 40px;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
 }
 
-.ma20th .tabs .item {
+.MTAv20 .tabs .item {
   line-height: 40px;
   font-weight: bold;
 }
 
-.ma20th .tabs .item.active {
+.MTAv20 .tabs .item.active {
   text-decoration: underline;
   text-shadow: none;
 }
 
-.ma20th .items-list {
+.MTAv20 .items-list {
   list-style: none;
   margin: 7px 0;
   padding: 0;
   overflow-y: auto;
 }
 
-.ma20th .items-list .item-header {
+.MTAv20 .items-list .item-header {
   font-weight: bold;
   min-height: 30px;
   line-height: 24px;
@@ -332,44 +332,44 @@
   color: #0B108C;
 }
 
-.ma20th .items-list .item {
+.MTAv20 .items-list .item {
   min-height: 30px;
   line-height: 24px;
   padding: 3px 0;
   border-bottom: 1px solid #bbb;
 }
 
-.ma20th .items-list .item .item-image {
+.MTAv20 .items-list .item .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 24px;
   flex: 0 0 24px;
   margin-right: 5px;
 }
 
-.ma20th .items-list .item img {
+.MTAv20 .items-list .item img {
   display: block;
 }
 
-.ma20th .items-list .item-name {
+.MTAv20 .items-list .item-name {
   margin: 0;
   font-weight: 600;
 }
 
-.ma20th .items-list .item-controls {
+.MTAv20 .items-list .item-controls {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 86px;
   flex: 0 0 86px;
   text-align: right;
 }
 
-.ma20th .items-list .collapsible:hover,
-.ma20th .items-list .collapsible:focus {
+.MTAv20 .items-list .collapsible:hover,
+.MTAv20 .items-list .collapsible:focus {
   color: #000;
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
 
-.ma20th .items-list .content {
+.MTAv20 .items-list .content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -378,7 +378,7 @@
 
 /* Resource boxes CSS */
 
-.ma20th .resource-value .resource-value-step {
+.MTAv20 .resource-value .resource-value-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -387,11 +387,11 @@
   cursor: pointer;
 }
 
-.ma20th .resource-value .resource-value-step.active {
+.MTAv20 .resource-value .resource-value-step.active {
   background-color: #0B108C;
 }
 
-.ma20th .resource-value .resource-value-empty {
+.MTAv20 .resource-value .resource-value-empty {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -420,7 +420,7 @@
 }
 
 /* Resource boxes 1 CSS */
-.ma20th .resource-counter .resource-counter-step {
+.MTAv20 .resource-counter .resource-counter-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -428,11 +428,11 @@
   cursor: pointer;
 }
 
-.ma20th .resource-counter .resource-counter-step[data-state="-"] {
+.MTAv20 .resource-counter .resource-counter-step[data-state="-"] {
   background-color: #0B108C;
 }
 
-.ma20th .resource-counter .resource-counter-step[data-state="/"] {
+.MTAv20 .resource-counter .resource-counter-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -445,7 +445,7 @@
     );
 }
 
-.ma20th .resource-counter .resource-counter-step[data-state="x"] {
+.MTAv20 .resource-counter .resource-counter-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -468,7 +468,7 @@
 }
 
 /* Resource boxes 2 CSS */
-.ma20th .resource-counter .resource-counter2-step {
+.MTAv20 .resource-counter .resource-counter2-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -477,11 +477,11 @@
   border-radius: 50%;
 }
 
-.ma20th .resource-counter .resource-counter2-step[data-state="-"] {
+.MTAv20 .resource-counter .resource-counter2-step[data-state="-"] {
   background-color: #0B108C;
 }
 
-.ma20th .resource-counter .resource-counter2-step[data-state="/"] {
+.MTAv20 .resource-counter .resource-counter2-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -494,7 +494,7 @@
     );
 }
 
-.ma20th .resource-counter .resource-counter2-step[data-state="x"] {
+.MTAv20 .resource-counter .resource-counter2-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -517,7 +517,7 @@
 }
 
 /* Resource boxes 3 CSS */
-.ma20th .resource-counter .resource-counter3-step {
+.MTAv20 .resource-counter .resource-counter3-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -525,11 +525,11 @@
   cursor: pointer;
 }
 
-.ma20th .resource-counter .resource-counter3-step[data-state="-"] {
+.MTAv20 .resource-counter .resource-counter3-step[data-state="-"] {
   background-color: rgb(0, 0, 0);
 }
 
-.ma20th .resource-counter .resource-counter3-step[data-state="/"] {
+.MTAv20 .resource-counter .resource-counter3-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -542,7 +542,7 @@
     );
 }
 
-.ma20th .resource-counter .resource-counter3-step[data-state="x"] {
+.MTAv20 .resource-counter .resource-counter3-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -565,7 +565,7 @@
 }
 
 /* Resource boxes symbols CSS */
-.ma20th .resource-counter-syb .resource-counter-syb-step {
+.MTAv20 .resource-counter-syb .resource-counter-syb-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -573,7 +573,7 @@
   cursor: pointer;
 }
 
-.ma20th .resource-counter-syb .resource-counter-syb-step[data-state="/"] {
+.MTAv20 .resource-counter-syb .resource-counter-syb-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -586,7 +586,7 @@
     );
 }
 
-.ma20th .resource-counter-syb .resource-counter-syb-step[data-state="x"] {
+.MTAv20 .resource-counter-syb .resource-counter-syb-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -609,7 +609,7 @@
 }
 
 /* Resource boxes 2 color-flags for Quintessence and Paradox CSS */
-.ma20th .resource-counter-2cf .resource-counter-2cf-step {
+.MTAv20 .resource-counter-2cf .resource-counter-2cf-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -617,16 +617,16 @@
   cursor: pointer;
 }
 
-.ma20th .resource-counter-2cf .resource-counter-2cf-step[data-state="-"] {
+.MTAv20 .resource-counter-2cf .resource-counter-2cf-step[data-state="-"] {
   background-color: rgb(28, 224, 238);
 }
 
-.ma20th .resource-counter-2cf .resource-counter-2cf-step[data-state="/"] {
+.MTAv20 .resource-counter-2cf .resource-counter-2cf-step[data-state="/"] {
   background-color: rgb(0, 0, 0);
 }
 
 /* Resource box Buttons CSS */
-.ma20th .resource-button {
+.MTAv20 .resource-button {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -635,7 +635,7 @@
   border-radius: 50%;
 }
 
-.ma20th .resource-button[data-state="+"] {
+.MTAv20 .resource-button[data-state="+"] {
   background:
     linear-gradient(
       90deg,
@@ -657,7 +657,7 @@
   );
 }
 
-.ma20th .resource-button[data-state="-"] {
+.MTAv20 .resource-button[data-state="-"] {
   background:
     linear-gradient(
       180deg,
@@ -671,7 +671,7 @@
 }
 
 /* Resource boxe Vitality CSS */
-.ma20th .resource-counter .resource-vitality-step {
+.MTAv20 .resource-counter .resource-vitality-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -679,7 +679,7 @@
   cursor: pointer;
 }
 
-.ma20th .resource-counter .resource-vitality-step[data-state="-"] {
+.MTAv20 .resource-counter .resource-vitality-step[data-state="-"] {
   background:
     linear-gradient(
       135deg,
@@ -692,7 +692,7 @@
     );
 }
 
-.ma20th .resource-counter .resource-vitality-step[data-state="/"] {
+.MTAv20 .resource-counter .resource-vitality-step[data-state="/"] {
   background:
     linear-gradient(
       45deg,
@@ -714,7 +714,7 @@
     );
 }
 
-.ma20th .resource-counter .resource-vitality-step[data-state="x"] {
+.MTAv20 .resource-counter .resource-vitality-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -745,16 +745,16 @@
     );
 }
 
-.ma20th .flex-group-center:not(.flexrow) .resource-value,
-.ma20th .flex-group-center:not(.flexrow) .resource-counter-syb,
-.ma20th .flex-group-center:not(.flexrow) .resource-counter-2cf,
-.ma20th .flex-group-center:not(.flexrow) .resource-buttons,
-.ma20th .flex-group-center:not(.flexrow) .resource-vitality,
-.ma20th .flex-group-center:not(.flexrow) .resource-counter {
+.MTAv20 .flex-group-center:not(.flexrow) .resource-value,
+.MTAv20 .flex-group-center:not(.flexrow) .resource-counter-syb,
+.MTAv20 .flex-group-center:not(.flexrow) .resource-counter-2cf,
+.MTAv20 .flex-group-center:not(.flexrow) .resource-buttons,
+.MTAv20 .flex-group-center:not(.flexrow) .resource-vitality,
+.MTAv20 .flex-group-center:not(.flexrow) .resource-counter {
   margin-top: 5px;
 }
 
-.ma20th .tab.disciplines .resource-value {
+.MTAv20 .tab.disciplines .resource-value {
   margin-top: 2px;
 }
 

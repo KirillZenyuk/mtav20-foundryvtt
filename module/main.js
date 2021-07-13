@@ -2,7 +2,7 @@
 
 // Import Modules
 import { MageActor } from './actor/actor.js'
-import { MageActorSheet } from './actor/mage20th-sheet.js'
+import { MageActorSheet } from './actor/mtav20-sheet.js'
 import { MageItem } from './item/item.js'
 import { VampireItemSheet } from './item/item-sheet.js'
 import { VampireDie, VampireHungerDie } from './dice/dice.js'
@@ -10,7 +10,7 @@ import { VampireDie, VampireHungerDie } from './dice/dice.js'
 Hooks.once('init', async function () {
   console.log('Initializing Schrecknet...')
 
-  game.ma20th = {
+  game.MTAv20 = {
     MageActor,
     MageItem,
     rollItemMacro
@@ -32,9 +32,9 @@ Hooks.once('init', async function () {
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet)
-  Actors.registerSheet('ma20th', MageActorSheet, { makeDefault: true })
+  Actors.registerSheet('MTAv20', MageActorSheet, { makeDefault: true })
   Items.unregisterSheet('core', ItemSheet)
-  Items.registerSheet('ma20th', VampireItemSheet, { makeDefault: true })
+  Items.registerSheet('MTAv20', VampireItemSheet, { makeDefault: true })
 
   // If you need to add Handlebars helpers, here are a few useful examples:
   Handlebars.registerHelper('concat', function () {
@@ -133,41 +133,41 @@ Hooks.once('ready', async function () {
 })
 
 Hooks.once('diceSoNiceReady', (dice3d) => {
-  dice3d.addSystem({ id: 'ma20th', name: 'VtM5e' }, true)
+  dice3d.addSystem({ id: 'MTAv20', name: 'VtM5e' }, true)
   dice3d.addDicePreset({
     type: 'dv',
     labels: [
-      'systems/ma20th/assets/images/normal-fail-dsn.png',
-      'systems/ma20th/assets/images/normal-fail-dsn.png',
-      'systems/ma20th/assets/images/normal-fail-dsn.png',
-      'systems/ma20th/assets/images/normal-fail-dsn.png',
-      'systems/ma20th/assets/images/normal-fail-dsn.png',
-      'systems/ma20th/assets/images/normal-success-dsn.png',
-      'systems/ma20th/assets/images/normal-success-dsn.png',
-      'systems/ma20th/assets/images/normal-success-dsn.png',
-      'systems/ma20th/assets/images/normal-success-dsn.png',
-      'systems/ma20th/assets/images/normal-crit-dsn.png'
+      'systems/MTAv20/assets/images/normal-fail-dsn.png',
+      'systems/MTAv20/assets/images/normal-fail-dsn.png',
+      'systems/MTAv20/assets/images/normal-fail-dsn.png',
+      'systems/MTAv20/assets/images/normal-fail-dsn.png',
+      'systems/MTAv20/assets/images/normal-fail-dsn.png',
+      'systems/MTAv20/assets/images/normal-success-dsn.png',
+      'systems/MTAv20/assets/images/normal-success-dsn.png',
+      'systems/MTAv20/assets/images/normal-success-dsn.png',
+      'systems/MTAv20/assets/images/normal-success-dsn.png',
+      'systems/MTAv20/assets/images/normal-crit-dsn.png'
     ],
     colorset: 'white',
     fontScale: 0.5,
-    system: 'ma20th'
+    system: 'MTAv20'
   })
   dice3d.addDicePreset({
     type: 'dh',
     labels: [
-      'systems/ma20th/assets/images/bestial-fail-dsn.png',
-      'systems/ma20th/assets/images/red-fail-dsn.png',
-      'systems/ma20th/assets/images/red-fail-dsn.png',
-      'systems/ma20th/assets/images/red-fail-dsn.png',
-      'systems/ma20th/assets/images/red-fail-dsn.png',
-      'systems/ma20th/assets/images/red-success-dsn.png',
-      'systems/ma20th/assets/images/red-success-dsn.png',
-      'systems/ma20th/assets/images/red-success-dsn.png',
-      'systems/ma20th/assets/images/red-success-dsn.png',
-      'systems/ma20th/assets/images/red-crit-dsn.png'
+      'systems/MTAv20/assets/images/bestial-fail-dsn.png',
+      'systems/MTAv20/assets/images/red-fail-dsn.png',
+      'systems/MTAv20/assets/images/red-fail-dsn.png',
+      'systems/MTAv20/assets/images/red-fail-dsn.png',
+      'systems/MTAv20/assets/images/red-fail-dsn.png',
+      'systems/MTAv20/assets/images/red-success-dsn.png',
+      'systems/MTAv20/assets/images/red-success-dsn.png',
+      'systems/MTAv20/assets/images/red-success-dsn.png',
+      'systems/MTAv20/assets/images/red-success-dsn.png',
+      'systems/MTAv20/assets/images/red-crit-dsn.png'
     ],
     colorset: 'black',
-    system: 'ma20th'
+    system: 'MTAv20'
   })
 })
 
@@ -188,7 +188,7 @@ async function createVampireMacro (data, slot) {
   const item = data.data
 
   // Create the macro command
-  const command = `game.ma20th.rollItemMacro("${item.name}");`
+  const command = `game.MTAv20.rollItemMacro("${item.name}");`
   let macro = game.macros.entities.find(m => (m.name === item.name) && (m.command === command))
   if (!macro) {
     macro = await Macro.create({
@@ -196,7 +196,7 @@ async function createVampireMacro (data, slot) {
       type: 'script',
       img: item.img,
       command: command,
-      flags: { 'ma20th.itemMacro': true }
+      flags: { 'MTAv20.itemMacro': true }
     })
   }
   game.user.assignHotbarMacro(macro, slot)
