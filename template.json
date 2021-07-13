@@ -10,7 +10,7 @@
         },
         "willpower": {
           "temp": 0,
-          "max": 0,
+          "max": 10,
           "spent": 0
         }
       }
@@ -21,24 +21,12 @@
       "equipment": "",
       "headers":{
         "concept":"",
-        "predator":"",
         "chronicle":"",
         "ambition":"",
-        "sire":"",
         "desire":"",
-        "generation":"",
         "tenets":"",
-        "touchstones":"",
-        "bane":""
+        "touchstones":""
       },
-      "blood": {
-        "potency": 0,
-        "resonance": ""
-      },
-      "clan": {
-        "value": ""
-      },
-
       "nature": {
         "value": ""
       },
@@ -62,18 +50,11 @@
         "value": 0,
         "max": 0
       },
-      "humanity": {
-        "value": 0,
-        "stains": 0
-      },
-      "hunger": {
-        "value": 0
-      },
 
       "arete": {
         "value": 0
       },
-      
+
       "quintessence": {
         "value": 0
       },
@@ -89,257 +70,257 @@
       "abilities": {
         "strength": {
           "value": 0,
-          "name": "MA20th.Strength"
+          "name": "MTAv20.Strength"
         },
         "charisma": {
           "value": 0,
-          "name": "MA20th.Charisma"
+          "name": "MTAv20.Charisma"
         },
         "intelligence": {
           "value": 0,
-          "name": "MA20th.Intelligence"
+          "name": "MTAv20.Intelligence"
         },
         "dexterity": {
           "value": 0,
-          "name": "MA20th.Dexterity"
+          "name": "MTAv20.Dexterity"
         },
         "manipulation": {
           "value": 0,
-          "name": "MA20th.Manipulation"
+          "name": "MTAv20.Manipulation"
         },
         "wits": {
           "value": 0,
-          "name": "MA20th.Wits"
+          "name": "MTAv20.Wits"
         },
         "stamina": {
           "value": 0,
-          "name": "MA20th.Stamina"
+          "name": "MTAv20.Stamina"
         },
         "appearance": {
           "value": 0,
-          "name": "MA20th.Appearance"
+          "name": "MTAv20.Appearance"
         },
         "perception": {
           "value": 0,
-          "name": "MA20th.Perception"
+          "name": "MTAv20.Perception"
         }
       },
 
       "skills": {
         "alertness": {
           "value": 0,
-          "name": "MA20th.Alertness"
+          "name": "MTAv20.Alertness"
         },
         "crafts": {
           "value": 0,
-          "name": "MA20th.Crafts"
+          "name": "MTAv20.Crafts"
         },
         "academics": {
           "value": 0,
-          "name": "MA20th.Academics"
+          "name": "MTAv20.Academics"
         },
         "arts": {
           "value": 0,
-          "name": "MA20th.Arts"
+          "name": "MTAv20.Arts"
         },
         "drive": {
           "value": 0,
-          "name": "MA20th.Drive"
+          "name": "MTAv20.Drive"
         },
         "computer": {
           "value": 0,
-          "name": "MA20th.Computer"
+          "name": "MTAv20.Computer"
         },
         "athletics": {
           "value": 0,
-          "name": "MA20th.Athletics"
+          "name": "MTAv20.Athletics"
         },
         "etiquette": {
           "value": 0,
-          "name": "MA20th.Etiquette"
+          "name": "MTAv20.Etiquette"
         },
         "cosmology": {
           "value": 0,
-          "name": "MA20th.Cosmology"
+          "name": "MTAv20.Cosmology"
         },
         "awareness": {
           "value": 0,
-          "name": "MA20th.Awareness"
+          "name": "MTAv20.Awareness"
         },
         "firearms": {
           "value": 0,
-          "name": "MA20th.Firearms"
+          "name": "MTAv20.Firearms"
         },
         "enigmas": {
           "value": 0,
-          "name": "MA20th.Enigmas"
+          "name": "MTAv20.Enigmas"
         },
         "brawl": {
           "value": 0,
-          "name": "MA20th.Brawl"
+          "name": "MTAv20.Brawl"
         },
         "martialArts": {
           "value": 0,
-          "name": "MA20th.MartialArts"
+          "name": "MTAv20.MartialArts"
         },
         "esoterica": {
           "value": 0,
-          "name": "MA20th.Esoterica"
+          "name": "MTAv20.Esoterica"
         },
         "empathy": {
           "value": 0,
-          "name": "MA20th.Empathy"
+          "name": "MTAv20.Empathy"
         },
         "meditation": {
           "value": 0,
-          "name": "MA20th.Meditation"
+          "name": "MTAv20.Meditation"
         },
         "investigation": {
           "value": 0,
-          "name": "MA20th.Investigation"
+          "name": "MTAv20.Investigation"
         },
         "expression": {
           "value": 0,
-          "name": "MA20th.Expression"
+          "name": "MTAv20.Expression"
         },
         "melee": {
           "value": 0,
-          "name": "MA20th.Melee"
+          "name": "MTAv20.Melee"
         },
         "law": {
           "value": 0,
-          "name": "MA20th.Law"
+          "name": "MTAv20.Law"
         },
         "intimidation": {
           "value": 0,
-          "name": "MA20th.Intimidation"
+          "name": "MTAv20.Intimidation"
         },
         "research": {
           "value": 0,
-          "name": "MA20th.Research"
+          "name": "MTAv20.Research"
         },
         "medicine": {
           "value": 0,
-          "name": "MA20th.Medicine"
+          "name": "MTAv20.Medicine"
         },
         "leadership": {
           "value": 0,
-          "name": "MA20th.Leadership"
+          "name": "MTAv20.Leadership"
         },
         "stealth": {
           "value": 0,
-          "name": "MA20th.Stealth"
+          "name": "MTAv20.Stealth"
         },
         "occult": {
           "value": 0,
-          "name": "MA20th.Occult"
+          "name": "MTAv20.Occult"
         },
         "streetwise": {
           "value": 0,
-          "name": "MA20th.Streetwise"
+          "name": "MTAv20.Streetwise"
         },
         "survival": {
           "value": 0,
-          "name": "MA20th.Survival"
+          "name": "MTAv20.Survival"
         },
         "politics": {
           "value": 0,
-          "name": "MA20th.Politics"
+          "name": "MTAv20.Politics"
         },
         "subterfuge": {
           "value": 0,
-          "name": "MA20th.Subterfuge"
-        },        
+          "name": "MTAv20.Subterfuge"
+        },
         "technology": {
           "value": 0,
-          "name": "MA20th.Technology"
+          "name": "MTAv20.Technology"
         },
         "science": {
           "value": 0,
-          "name": "MA20th.Science"
+          "name": "MTAv20.Science"
         }
       },
       "disciplines": {
         "animalism": {
-          "name": "MA20th.Animalism",
+          "name": "MTAv20.Animalism",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "auspex": {
-          "name": "MA20th.Auspex",
+          "name": "MTAv20.Auspex",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "celerity": {
-          "name": "MA20th.Celerity",
+          "name": "MTAv20.Celerity",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "dominate": {
-          "name": "MA20th.Dominate",
+          "name": "MTAv20.Dominate",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "fortitude": {
-          "name": "MA20th.Fortitude",
+          "name": "MTAv20.Fortitude",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "obfuscate": {
-          "name": "MA20th.Obfuscate",
+          "name": "MTAv20.Obfuscate",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "potence": {
-          "name": "MA20th.Potence",
+          "name": "MTAv20.Potence",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "presence": {
-          "name": "MA20th.Presence",
+          "name": "MTAv20.Presence",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "protean": {
-          "name": "MA20th.Protean",
+          "name": "MTAv20.Protean",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "sorcery": {
-          "name": "MA20th.BloodSorcery",
+          "name": "MTAv20.BloodSorcery",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "oblivion": {
-          "name": "MA20th.Oblivion",
+          "name": "MTAv20.Oblivion",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "alchemy": {
-          "name": "MA20th.ThinBloodAlchemy",
+          "name": "MTAv20.ThinBloodAlchemy",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "rituals": {
-          "name": "MA20th.Rituals",
+          "name": "MTAv20.Rituals",
           "value": 0,
           "powers": [],
           "visible": false
         },
         "ceremonies": {
-          "name": "MA20th.Ceremonies",
+          "name": "MTAv20.Ceremonies",
           "value": 0,
           "powers": [],
           "visible": false
@@ -347,59 +328,59 @@
       },
       "spheres": {
         "correspondence": {
-          "name": "MA20th.Correspondence",
+          "name": "MTAv20.Correspondence",
           "value": 0,
           "powers": [],
           "visible": true
         },
         "life": {
-          "name": "MA20th.Life",
+          "name": "MTAv20.Life",
           "value": 0,
           "powers": [],
           "visible": true
         },
         "prime": {
-          "name": "MA20th.Prime",
+          "name": "MTAv20.Prime",
           "value": 0,
           "powers": [],
           "visible": true
         },
         "entropy": {
-          "name": "MA20th.Entropy",
+          "name": "MTAv20.Entropy",
           "value": 0,
           "powers": [],
           "visible": true
         },
         "matter": {
-          "name": "MA20th.Matter",
+          "name": "MTAv20.Matter",
           "value": 0,
           "powers": [],
           "visible": true
-        }, 
+        },
         "spirit": {
-          "name": "MA20th.Spirit",
+          "name": "MTAv20.Spirit",
           "value": 0,
           "powers": [],
           "visible": true
         },
         "forces": {
-          "name": "MA20th.Forces",
+          "name": "MTAv20.Forces",
           "value": 0,
           "powers": [],
           "visible": true
         },
         "mind": {
-          "name": "MA20th.Mind",
+          "name": "MTAv20.Mind",
           "value": 0,
           "powers": [],
           "visible": true
         },
         "time": {
-          "name": "MA20th.Time",
+          "name": "MTAv20.Time",
           "value": 0,
           "powers": [],
           "visible": true
-        } 
+        }
       }
     }
   },
@@ -440,7 +421,7 @@
       "clip": "",
       "conceal": "",
       "notes": ""
-    }, 
+    },
     "melee-weapons": {
       "name": "",
       "difficulty": 0,
@@ -448,7 +429,7 @@
       "damage-type": "",
       "conceal": "",
       "notes": ""
-    }, 
+    },
     "armors-shields": {
       "name": "",
       "type": "",

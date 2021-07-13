@@ -131,11 +131,11 @@
 }
 
 .flex-left {
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  align-items: left;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: left;
   text-align: left;
 }
@@ -513,7 +513,7 @@
       black 55%,
       transparent 57%,
       transparent 100%
-    ); 
+    );
 }
 
 /* Resource boxes 3 CSS */
@@ -561,7 +561,7 @@
       black 55%,
       transparent 57%,
       transparent 100%
-    ); 
+    );
 }
 
 /* Resource boxes symbols CSS */
@@ -605,7 +605,7 @@
       black 55%,
       transparent 57%,
       transparent 100%
-    ); 
+    );
 }
 
 /* Resource boxes 2 color-flags for Quintessence and Paradox CSS */
