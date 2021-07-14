@@ -94,8 +94,7 @@ Hooks.once('init', async function () {
     return ret
   })
 
-  Handlebars.registerHelper('willpowerRollValue', function (fake, willpowerData) {
-    const willpower = willpowerData.data.root.data.data.willpower
+  Handlebars.registerHelper('willpowerRollValue', function (willpower) {
     return (willpower.max - willpower.spent)
   })
 

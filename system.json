@@ -9,7 +9,7 @@
   "author": "Kirill Zenyuk",
   "esmodules": ["module/main.js"],
   "styles": [
-    "css/main.css"
+    "css/style.css"
   ],
   "scripts": [],
   "packs": [],

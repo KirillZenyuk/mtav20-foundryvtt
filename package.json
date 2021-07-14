@@ -4,8 +4,15 @@
   "description": "A FoundryVTT system for Mage: The Ascension v20",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.compiled.css",
+    "concat:css": "concat -o css/style.css css/main.css css/style.compiled.css",
+    "build:css": "npm-run-all compile:sass concat:css"
   },
   "author": "Kirill Zenyuk",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
 }
