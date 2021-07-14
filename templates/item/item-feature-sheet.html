@@ -18,7 +18,7 @@
 
         {{!-- Description Tab --}}
         <div class="tab" data-group="primary" data-tab="description">
-            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+            {{editor content=data.data.description target="data.description" button=true owner=owner editable=editable}}
         </div>
 
         {{!-- Attributes Tab --}}
@@ -26,13 +26,13 @@
             <div class="resource grid grid-4col flex-center">
                 <label class="resource-label">{{localize "MTAv20.FeatureType"}}: </label>
                 <select name="data.featuretype" data-type="String">
-                    {{#select data.featuretype}}
+                    {{#select data.data.featuretype}}
                     <option value="merit">{{localize "MTAv20.Merit"}}</option>
                     <option value="flaw">{{localize "MTAv20.Flaw"}}</option>
                     {{/select}}
                 </select>
                 <label class="resource-label">{{localize "MTAv20.Points"}}: </label>
-                <input type="number" name="data.points" value="{{data.points}}" />
+                <input type="number" name="data.points" value="{{data.data.points}}" />
             </div>
         </div>
     </section>

@@ -13,34 +13,10 @@
                 <h1 class="charname"><input name="data.sect.value" type="text" value="{{data.data.sect.value}}"
                         placeholder="{{localize 'MTAv20.Sect'}}" /></h1>
             </div>
-            {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
-            use both the "grid" and "grid-Ncol" class where "N" can be any number
-            from 1 to 12 and will create that number of columns. --}}
-            <div class="resources grid grid-3col">
-                {{!-- "flex-group-center" is also defined in the _grid.scss file
-                and it will add a small amount of padding, a border, and will
-                center all of its child elements content and text. --}}
-                <div class="resource flex-group-center">
-                    <label for="data.data.health" class="resource-label">{{localize "MTAv20.Health"}}</label>
-                    <div class="resource-content flexrow flex-center flex-between">
-                        <div class="resource-counter" data-states="-:total,/:lethal,x:aggravated" data-total="{{data.data.health.total}}" data-lethal="{{data.data.health.lethal}}" data-aggravated="{{data.data.health.aggravated}}" data-name="data.data.health">
-                            {{#numLoop 7}}
-                            <span class="resource-vitality-step" data-index="{{this}}" data-state=""></span>
-                            {{/numLoop}}
-                        </div>
-                    </div>
-                </div>
-                <div class="resource flex-group-center arete">
-                    <label for="data.data.arete.value" class="resource-label abilityrollable" data-roll="{{data.data.arete.value}}"
-                        data-label="MTAv20.Arete">{{localize "MTAv20.Arete"}}</label>
-                    <div class="resource-content flexrow flex-center flex-between">
-                        <div class="resource-counter" data-states="-:value" data-value="{{data.data.arete.value}}" data-name="data.arete">
-                            {{#numLoop 10}}
-                            <span class="resource-counter2-step" data-index="{{this}}" data-state=""></span>
-                            {{/numLoop}}
-                        </div>
-                    </div>
-                </div>
+
+            <!-- Experience, Health, Q-P -->
+            <div class="resources grid grid-4col">
+
                 <div class="resource flex-group-center exp">
                     <label for="data.data.exp" class="resource-label">{{localize "MTAv20.Exp"}}</label>
                     <div class="resource-content flexrow flex-center flex-between">
@@ -49,18 +25,24 @@
                         <input type="number" name="data.exp.max" value="{{data.data.exp.max}}" data-dtype="Number" />
                     </div>
                 </div>
-            </div>
-            {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
-            use both the "grid" and "grid-Ncol" class where "N" can be any number
-            from 1 to 12 and will create that number of columns. --}}
-            <div class="resources grid grid-2col">
-                <div class="resource flex-group-center">
 
-                    <span class="resource-button" data-index="q" data-state="+"></span>
+                <div class="resource flex-group-center">
+                    <label for="data.data.health" class="resource-label">{{localize "MTAv20.Health"}}</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <div class="resource-counter" data-states="-:total,/:lethal,x:aggravated" data-total="{{data.data.health.total}}" data-lethal="{{data.data.health.lethal}}" data-aggravated="{{data.data.health.aggravated}}" data-name="data.health">
+                            {{#numLoop 7}}
+                            <span class="resource-vitality-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource flex-group-center" style="width: 200% !important;">
                     <span class="resource-button" data-index="q" data-state="-"></span>
+                    <span class="resource-button" data-index="q" data-state="+"></span>
                     <label for="data.data.magika.quintessence" class="resource-label">  {{localize "MTAv20.Quintessence"}} | {{localize "MTAv20.Paradox"}}  </label>
-                    <span class="resource-button" data-index="p" data-state="-"></span>
                     <span class="resource-button" data-index="p" data-state="+"></span>
+                    <span class="resource-button" data-index="p" data-state="-"></span>
 
                     <div class="resource-content flexrow flex-center flex-between">
                         <div class="resource-counter-2cf" data-states="-:quintessence,/:paradox" data-quintessence="{{data.data.magika.quintessence}}" data-paradox="{{data.data.magika.paradox}}" data-name="data.magika">
@@ -70,6 +52,12 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <!-- Willpower, Arete -->
+            <div class="resources grid grid-2col">
+
                 <div class="resource flex-group-center">
                     <label for="data.data.willpower" class="resource-label abilityrollable" data-roll="{{willpowerRollValue data.data.willpower}}"
                         data-label="MTAv20.Willpower">{{localize "MTAv20.Willpower"}}</label>
@@ -88,6 +76,19 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="resource flex-group-center arete">
+                    <label for="data.data.arete.value" class="resource-label abilityrollable" data-roll="{{data.data.arete.value}}"
+                           data-label="MTAv20.Arete">{{localize "MTAv20.Arete"}}</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <div class="resource-counter" data-states="-:value" data-value="{{data.data.arete.value}}" data-name="data.arete">
+                            {{#numLoop 10}}
+                            <span class="resource-counter2-step" data-index="{{this}}" data-state=""></span>
+                            {{/numLoop}}
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
@@ -239,7 +240,7 @@
                 <li class="item flexrow" data-item-id="{{item._id}}">
                     <label for="data.data.item.{{id}}.value" class="resource-label vrollable" data-roll="{{item.data.data.value}}"
                         data-label="{{item.name}}">{{item.name}}</label>
-                        <div class="resource-value" data-value="{{item.data.data.value}}" data-name="data.item.{{id}}.value">
+                        <div class="resource-value" data-value="{{item.data.value}}" data-name="items.{{id}}.data.value">
                             <!-- <span class="resource-value-empty"></span> -->
                             {{#numLoop 5}}
                             <span class="resource-value-step" data-index="{{this}}"></span>
