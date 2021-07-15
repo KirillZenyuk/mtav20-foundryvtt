@@ -1,21 +1,21 @@
 /*
     COLORS:
     red                 #F44336
-    purple              #9C27B0
-    purple lighten-2    #BA68C8
-    deep-purple         #673AB7
-    indigo              #3F51B5
-    indigo lighten-1    #5C6BC0
-    indigo darken-1     #3949AB
-    blue                #2196F3
-    blue lighten-2      #64B5F6
-    blue darken-2       #1976D2
-    blue darken-3       #1565C0
-    blue darken-4       #0D47A1
-    blue accent-2       #448AFF
-    light-blue          #03A9F4
-    light-blue darken-3 #0277BD
-    light-blue accent-4 #0091EA
+    purple              #9C27B0 +
+    purple darken-4     #4A148C ++
+    deep-purple         #673AB7 ++
+    deep-purple darken-3 #4527A0 +
+    deep-purple darken-4 #311B92 +
+    indigo              #3F51B5 +
+    indigo darken-1     #3949AB ++
+    indigo darken-3     #283593
+    blue                #2196F3 Q?
+    blue lighten-2      #64B5F6 Q?
+    blue darken-2       #1976D2 +
+    blue darken-3       #1565C0 +++
+    blue darken-4       #0D47A1 +++
+    light-blue darken-3 #0277BD ++
+    grey darken-4       #111 P
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;800&family=Roboto:wght@300;400;500&display=swap");
@@ -31,31 +31,6 @@
 /* Global styles */
 .window-app {
     font-family: "Roboto", sans-serif;
-}
-
-.rollable:hover,
-.rollable:focus,
-.vrollable:hover,
-.vrollable:focus {
-    color: #000;
-    text-shadow: 0 0 10px red;
-    cursor: pointer;
-}
-
-.attribute-rollable:hover,
-.attribute-rollable:focus,
-.ability-rollable:hover,
-.ability-rollable:focus {
-    color: #000;
-    text-shadow: 0 0 10px blue;
-    cursor: pointer;
-}
-
-.custom-rollable:hover,
-.custom-rollable:focus {
-    color: #000;
-    text-shadow: 0 0 10px red;
-    cursor: pointer;
 }
 
 .grid,
@@ -129,7 +104,7 @@
     align-items: center;
     text-align: center;
     padding: 5px;
-    border: 1px solid #0B108C;
+    border: 1px solid #0D47A1;
     border-radius: 5px;
 }
 
@@ -180,9 +155,44 @@
     font-weight: 600;
 }
 
+.mtav20 a:hover {
+    text-shadow: 0 0 10px #1565C0;
+}
+
+.mtav20 input[type="text"]:focus,
+.mtav20 input[type="number"]:focus,
+.mtav20 input[type="password"]:focus,
+.mtav20 input[type="date"]:focus,
+.mtav20 input[type="time"]:focus {
+    box-shadow: 0 0 5px #1565C0;
+}
+
+.mtav20 .window-content .form-group input[type=checkbox] {
+    background: rgba(0, 0, 0, 0.05);
+    margin: 0;
+    color: #191813;
+    border: 1px solid #7a7971;
+    border-radius: 3px;
+}
+
+.mtav20.window-content button:hover, .mtav20 button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #1565C0;
+}
+
+.mtav20 .window-content select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #1565C0;
+}
+
+.mtav20 textarea:focus {
+    box-shadow: 0 0 6px #1565C0;
+    outline: none;
+}
+
 .mtav20 .profile-img,
 .mtav20 .item-image img {
-    background: #0B108C;
+    background: #0D47A1;
 }
 
 .mtav20 input {
@@ -192,7 +202,7 @@
 }
 
 .mtav20 button.rollable {
-    background: #0B108C;
+    background: #0D47A1;
     color: white;
     font-family: "cormorantlight", sans-serif;
     font-weight: bold;
@@ -215,7 +225,7 @@
 
 .mtav20 .window-content nav.sheet-tabs {
     background: #e6ded0;
-    color: #0B108C;
+    color: #0D47A1;
     font-size: 16px;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -238,8 +248,8 @@
 }
 
 .mtav20 .window-content .sheet-body .tab > .resource-label {
-    color: #0B108C;
-    border-bottom: 1px solid #0B108C;
+    color: #0D47A1;
+    border-bottom: 1px solid #0D47A1;
     width: 100%;
     display: block;
     text-transform: uppercase;
@@ -247,9 +257,28 @@
 
 /* Styles limited to mtav20 sheets */
 
-/* .mtav20 .item-form {
-  font-family: "Roboto", sans-serif;
-} */
+.mtav20 .rollable:hover,
+.mtav20 .rollable:focus {
+    color: #111;
+    text-shadow: 0 0 10px #1565C0;
+    cursor: pointer;
+}
+
+.mtav20 .attribute-rollable:hover,
+.mtav20 .attribute-rollable:focus,
+.mtav20 .ability-rollable:hover,
+.mtav20 .ability-rollable:focus {
+    color: #111;
+    text-shadow: 0 0 10px #1565C0;
+    cursor: pointer;
+}
+
+.mtav20 .custom-rollable:hover,
+.mtav20 .custom-rollable:focus {
+    color: #111;
+    text-shadow: 0 0 10px #1565C0;
+    cursor: pointer;
+}
 
 .mtav20 .sheet-header {
     -webkit-box-flex: 0;
@@ -268,7 +297,7 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .mtav20 .sheet-header .profile-img {
@@ -280,6 +309,11 @@
     height: auto;
     width: 100px;
     margin-right: 10px;
+}
+
+.mtav20 .sheet-header input {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .mtav20 .sheet-header .header-fields {
@@ -299,6 +333,10 @@
     width: 100%;
     height: 100%;
     margin: 0;
+}
+
+.mtav20 .sheet-header .exp input {
+    width: 33%;
 }
 
 .mtav20 .sheet-tabs {
@@ -355,8 +393,8 @@
     min-height: 30px;
     line-height: 24px;
     padding: 3px 0;
-    border-bottom: 1px solid #0B108C;
-    color: #0B108C;
+    border-bottom: 1px solid #0D47A1;
+    color: #0D47A1;
 }
 
 .mtav20 .items-list .item {
@@ -391,8 +429,8 @@
 
 .mtav20 .items-list .collapsible:hover,
 .mtav20 .items-list .collapsible:focus {
-    color: #000;
-    text-shadow: 0 0 10px red;
+    color: #111;
+    text-shadow: 0 0 10px #1565C0;
     cursor: pointer;
 }
 
@@ -408,20 +446,20 @@
 .mtav20 .resource-value .resource-value-step {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .mtav20 .resource-value .resource-value-step.active {
-    background-color: #0B108C;
+    background-color: #1565C0;
 }
 
 .mtav20 .resource-value .resource-value-empty {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     border-radius: 50%;
     cursor: pointer;
@@ -429,8 +467,8 @@
             45deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -438,8 +476,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -449,13 +487,13 @@
 .mtav20 .resource-counter .resource-counter-step {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     cursor: pointer;
 }
 
 .mtav20 .resource-counter .resource-counter-step[data-state="-"] {
-    background-color: #0B108C;
+    background-color: #1565C0;
 }
 
 .mtav20 .resource-counter .resource-counter-step[data-state="/"] {
@@ -463,8 +501,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -475,8 +513,8 @@
             45deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -484,8 +522,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -495,14 +533,14 @@
 .mtav20 .resource-counter .resource-counter2-step {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
 }
 
 .mtav20 .resource-counter .resource-counter2-step[data-state="-"] {
-    background-color: #0B108C;
+    background-color: #1565C0;
 }
 
 .mtav20 .resource-counter .resource-counter2-step[data-state="/"] {
@@ -510,8 +548,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -522,8 +560,8 @@
             45deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -531,8 +569,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -542,13 +580,13 @@
 .mtav20 .resource-counter .resource-counter3-step {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     cursor: pointer;
 }
 
 .mtav20 .resource-counter .resource-counter3-step[data-state="-"] {
-    background-color: rgb(0, 0, 0);
+    background-color: #111;
 }
 
 .mtav20 .resource-counter .resource-counter3-step[data-state="/"] {
@@ -556,8 +594,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -568,8 +606,8 @@
             45deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -577,8 +615,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -588,7 +626,7 @@
 .mtav20 .resource-counter-syb .resource-counter-syb-step {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     cursor: pointer;
 }
@@ -598,8 +636,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -610,8 +648,8 @@
             45deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -619,8 +657,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -630,24 +668,24 @@
 .mtav20 .resource-counter-2cf .resource-counter-2cf-step {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     cursor: pointer;
 }
 
 .mtav20 .resource-counter-2cf .resource-counter-2cf-step[data-state="-"] {
-    background-color: rgb(28, 224, 238);
+    background-color: #64B5F6;
 }
 
 .mtav20 .resource-counter-2cf .resource-counter-2cf-step[data-state="/"] {
-    background-color: rgb(0, 0, 0);
+    background-color: #212121;
 }
 
 /* Resource box Buttons CSS */
 .mtav20 .resource-button {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
@@ -658,8 +696,8 @@
             90deg,
             transparent 0%,
             transparent 43%,
-            green 45%,
-            green 55%,
+            #2E7D32 45%,
+            #2E7D32 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -667,8 +705,8 @@
             180deg,
             transparent 0%,
             transparent 43%,
-            green 45%,
-            green 55%,
+            #2E7D32 45%,
+            #2E7D32 55%,
             transparent 57%,
             transparent 100%
     );
@@ -679,8 +717,8 @@
             180deg,
             transparent 0%,
             transparent 43%,
-            red 45%,
-            red 55%,
+            #C62828 45%,
+            #C62828 55%,
             transparent 57%,
             transparent 100%
     );
@@ -690,7 +728,7 @@
 .mtav20 .resource-counter .resource-vitality-step {
     height: 14px;
     width: 14px;
-    border: 1px solid black;
+    border: 1px solid #111;
     display: inline-block;
     cursor: pointer;
 }
@@ -700,8 +738,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -712,8 +750,8 @@
             45deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -721,8 +759,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -733,8 +771,8 @@
             45deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -742,8 +780,8 @@
             90deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     ),
@@ -751,8 +789,8 @@
             135deg,
             transparent 0%,
             transparent 43%,
-            black 45%,
-            black 55%,
+            #111 45%,
+            #111 55%,
             transparent 57%,
             transparent 100%
     );
@@ -776,6 +814,11 @@
 .roll-label {
     font-weight: bold;
     font-size: 130%;
+}
+
+.roll-botch,
+.roll-total-failure {
+    color: #C62828;
 }
 
 .roll-label .danger {

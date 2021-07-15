@@ -5,13 +5,14 @@
 
 FoundryVTT system for Mage: The Ascension 20th Anniversary Edition.
 
-This system is built on the basis of the existing MtA v20 system (link: [ma20th]) created by [renanmsouza], which does not work in FoundryVTT version 0.8.
+This system is built on the basis of the existing MtA v20 system (link: [ma20th]) created by [renanmsouza] (which does
+not work in FoundryVTT version 0.8) and VtM 5e System (link: [vtm5e]) created by [Rayji96].
 
 Licensed MtA v20 materials will not be provided, as this is a system provided for public use for free.
 
 ## Credits
 
-* Original MtA system: [renanmsouza]
+* Original MtA v20 system: [renanmsouza]
 * VtM 5e system: [Rayji96]
 * other original systems contributors
 
