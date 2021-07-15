@@ -1,28 +1,29 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" alt="Item Image" />
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" alt="Item Image"/>
         <div class="header-fields">
-            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}"
+                                        placeholder="{{localize 'MTAv20.Name'}}"/></h1>
         </div>
     </header>
 
-    {{!-- Sheet Tab Navigation --}}
+    <!-- Sheet Tab Navigation -->
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">Description</a>
-        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="description">{{localize "MTAv20.Description"}}</a>
+        <a class="item" data-tab="attributes">{{localize "MTAv20.Attributes"}}</a>
     </nav>
 
-    {{!-- Sheet Body --}}
+    <!-- Sheet Body -->
     <section class="sheet-body">
 
-        {{!-- Description Tab --}}
+        <!-- Description Tab -->
         <div class="tab" data-group="primary" data-tab="description">
-            {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+            {{editor content=data.data.description target="data.description" button=true owner=owner editable=editable}}
         </div>
 
-        {{!-- Attributes Tab --}}
+        <!-- Attributes Tab -->
         <div class="tab attributes" data-group="primary" data-tab="attributes">
-            {{!-- As you add new fields, add them in here! --}}
+            <!-- As you add new fields, add them in here -->
         </div>
     </section>
 </form>

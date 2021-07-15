@@ -298,19 +298,42 @@
   },
   "Item": {
     "types": [
-      "feature",
-      "power",
-      "specialty",
-      "background",
-      "ranged-weapons",
       "melee-weapons",
       "armors-shields",
+      "ranged-weapons",
+      "feature",
+      "background",
+      "specialty",
       "customRoll"
     ],
     "templates": {
       "base": {
         "description": ""
       }
+    },
+    "melee-weapons": {
+      "name": "Melee Weapon",
+      "difficulty": 0,
+      "damage": "",
+      "damage-type": "",
+      "conceal": "",
+      "notes": ""
+    },
+    "armors-shields": {
+      "name": "Armor",
+      "type": "",
+      "rating": 0,
+      "block-bonus": 0,
+      "penalty": 0
+    },
+    "ranged-weapons": {
+      "name": "Ranged Weapon",
+      "damage": "",
+      "range": "",
+      "rate": "",
+      "clip": "",
+      "conceal": "",
+      "notes": ""
     },
     "feature": {
       "templates": [
@@ -319,16 +342,11 @@
       "featuretype": "merit",
       "points": 0
     },
-    "power": {
+    "background": {
       "templates": [
         "base"
       ],
-      "discipline": "rituals",
-      "duration": "",
-      "dice1": "discipline",
-      "dice2": "discipline",
-      "cost": "",
-      "rollable": false
+      "value": 0
     },
     "specialty": {
       "templates": [
@@ -336,40 +354,12 @@
       ],
       "ability": ""
     },
-    "background": {
+    "customRoll": {
       "templates": [
         "base"
       ],
-      "value": 0
-    },
-    "ranged-weapons": {
-      "name": "",
-      "damage": "",
-      "range": "",
-      "rate": "",
-      "clip": "",
-      "conceal": "",
-      "notes": ""
-    },
-    "melee-weapons": {
-      "name": "",
-      "difficulty": 0,
-      "damage": "",
-      "damage-type": "",
-      "conceal": "",
-      "notes": ""
-    },
-    "armors-shields": {
-      "name": "",
-      "type": "",
-      "rating": 0,
-      "block-bonus": 0,
-      "penalty": 0
-    },
-    "customRoll": {
-      "templates": ["base"],
-      "dice1" : "",
-      "dice2" : ""
+      "dice1": "",
+      "dice2": ""
     }
   }
 }
