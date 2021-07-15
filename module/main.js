@@ -1,10 +1,11 @@
 /* global CONFIG, Handlebars, Hooks, Actors, ActorSheet, ChatMessage, Items, ItemSheet, Macro, game, ui */
 
 // Import Modules
+import { preloadHandlebarsTemplates } from './templates.js'
 import { MageActor } from './actor/actor.js'
 import { MageActorSheet } from './actor/mtav20-sheet.js'
 import { MageItem } from './item/item.js'
-import { VampireItemSheet } from './item/item-sheet.js'
+import { MageItemSheet } from './item/item-sheet.js'
 import { VampireDie, VampireHungerDie } from './dice/dice.js'
 
 Hooks.once('init', async function () {
@@ -34,7 +35,9 @@ Hooks.once('init', async function () {
   Actors.unregisterSheet('core', ActorSheet)
   Actors.registerSheet('MTAv20', MageActorSheet, { makeDefault: true })
   Items.unregisterSheet('core', ItemSheet)
-  Items.registerSheet('MTAv20', VampireItemSheet, { makeDefault: true })
+  Items.registerSheet('MTAv20', MageItemSheet, { makeDefault: true })
+
+  preloadHandlebarsTemplates()
 
   // If you need to add Handlebars helpers, here are a few useful examples:
   Handlebars.registerHelper('concat', function () {
@@ -63,9 +66,18 @@ Hooks.once('init', async function () {
     return str.charAt(0).toUpperCase() + str.slice(1)
   })
 
+  const capitalize = (s) => {
+    if (typeof s !== 'string') return ''
+    return s.charAt(0).toUpperCase() + s.slice(1)
+  }
+
   // TODO: There's gotta be a better way lol
   Handlebars.registerHelper('generateFeatureLabel', function (str) {
     return (str === 'merit' ? 'MTAv20.Merit' : 'MTAv20.Flaw')
+  })
+
+  Handlebars.registerHelper('generateAbilityLabel', function (str) {
+    return 'MTAv20.'.concat(str.split(' ').flatMap(word => capitalize(word)).join(''))
   })
 
   // TODO: there exist math helpers for handlebars

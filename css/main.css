@@ -22,12 +22,19 @@
   cursor: pointer;
 }
 
-.abilityrollable:hover,
-.abilityrollable:focus,
-.skillrollable:hover,
-.skillrollable:focus {
+.attribute-rollable:hover,
+.attribute-rollable:focus,
+.ability-rollable:hover,
+.ability-rollable:focus {
   color: #000;
   text-shadow: 0 0 10px blue;
+  cursor: pointer;
+}
+
+.custom-rollable:hover,
+.custom-rollable:focus {
+  color: #000;
+  text-shadow: 0 0 10px red;
   cursor: pointer;
 }
 
@@ -181,7 +188,7 @@
   font-size: 16px;
 }
 
-.MTAv20 .window-content .abilities .ability .resource-label {
+.MTAv20 .window-content .attributes .attribute .resource-label {
   font-weight: bold;
   font-size: 18px;
 }
@@ -205,8 +212,8 @@
   border-radius: 5px;
 }
 
-.MTAv20 .window-content .abilities,
-.MTAv20.sheet.actor .window-content .skills {
+.MTAv20 .window-content .attributes,
+.MTAv20.sheet.actor .window-content .abilities {
   border: none;
 }
 

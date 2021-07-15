@@ -1,6 +1,8 @@
 {
   "Actor": {
-    "types": ["character"],
+    "types": [
+      "character"
+    ],
     "templates": {
       "base": {
         "health": {
@@ -16,45 +18,43 @@
       }
     },
     "character": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
+      "wonders": "",
       "biography": "",
       "equipment": "",
-      "headers":{
-        "concept":"",
-        "chronicle":"",
-        "ambition":"",
-        "desire":"",
-        "tenets":"",
-        "touchstones":""
+      "notes": "",
+      "headers": {
+        "chronicle": {
+          "value": ""
+        },
+        "nature": {
+          "value": ""
+        },
+        "demeanor": {
+          "value": ""
+        },
+        "essence": {
+          "value": ""
+        },
+        "affiliation": {
+          "value": ""
+        },
+        "sect": {
+          "value": ""
+        },
+        "concept": {
+          "value": ""
+        }
       },
-      "nature": {
-        "value": ""
-      },
-      "demeanor": {
-        "value": ""
-      },
-      "essence": {
-        "value": ""
-      },
-      "affiliation": {
-        "value": ""
-      },
-      "sect": {
-        "value": ""
-      },
-      "concept": {
-        "value": ""
-      },
-
       "exp": {
         "value": 0,
         "max": 0
       },
-
       "arete": {
         "value": 0
       },
-
       "quintessence": {
         "value": 0
       },
@@ -66,8 +66,7 @@
         "paradox": 0,
         "max": 20
       },
-
-      "abilities": {
+      "attributes": {
         "strength": {
           "value": 0,
           "name": "MTAv20.Strength"
@@ -76,9 +75,9 @@
           "value": 0,
           "name": "MTAv20.Charisma"
         },
-        "intelligence": {
+        "perception": {
           "value": 0,
-          "name": "MTAv20.Intelligence"
+          "name": "MTAv20.Perception"
         },
         "dexterity": {
           "value": 0,
@@ -88,9 +87,9 @@
           "value": 0,
           "name": "MTAv20.Manipulation"
         },
-        "wits": {
+        "intelligence": {
           "value": 0,
-          "name": "MTAv20.Wits"
+          "name": "MTAv20.Intelligence"
         },
         "stamina": {
           "value": 0,
@@ -100,13 +99,12 @@
           "value": 0,
           "name": "MTAv20.Appearance"
         },
-        "perception": {
+        "wits": {
           "value": 0,
-          "name": "MTAv20.Perception"
+          "name": "MTAv20.Wits"
         }
       },
-
-      "skills": {
+      "abilities": {
         "alertness": {
           "value": 0,
           "name": "MTAv20.Alertness"
@@ -240,92 +238,6 @@
           "name": "MTAv20.Science"
         }
       },
-      "disciplines": {
-        "animalism": {
-          "name": "MTAv20.Animalism",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "auspex": {
-          "name": "MTAv20.Auspex",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "celerity": {
-          "name": "MTAv20.Celerity",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "dominate": {
-          "name": "MTAv20.Dominate",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "fortitude": {
-          "name": "MTAv20.Fortitude",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "obfuscate": {
-          "name": "MTAv20.Obfuscate",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "potence": {
-          "name": "MTAv20.Potence",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "presence": {
-          "name": "MTAv20.Presence",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "protean": {
-          "name": "MTAv20.Protean",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "sorcery": {
-          "name": "MTAv20.BloodSorcery",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "oblivion": {
-          "name": "MTAv20.Oblivion",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "alchemy": {
-          "name": "MTAv20.ThinBloodAlchemy",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "rituals": {
-          "name": "MTAv20.Rituals",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        },
-        "ceremonies": {
-          "name": "MTAv20.Ceremonies",
-          "value": 0,
-          "powers": [],
-          "visible": false
-        }
-      },
       "spheres": {
         "correspondence": {
           "name": "MTAv20.Correspondence",
@@ -385,19 +297,32 @@
     }
   },
   "Item": {
-    "types": ["feature", "power", "specialty", "background", "ranged-weapons", "melee-weapons", "armors-shields"],
+    "types": [
+      "feature",
+      "power",
+      "specialty",
+      "background",
+      "ranged-weapons",
+      "melee-weapons",
+      "armors-shields",
+      "customRoll"
+    ],
     "templates": {
       "base": {
         "description": ""
       }
     },
     "feature": {
-      "templates": ["base"],
-      "featuretype":"merit",
+      "templates": [
+        "base"
+      ],
+      "featuretype": "merit",
       "points": 0
     },
     "power": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "discipline": "rituals",
       "duration": "",
       "dice1": "discipline",
@@ -406,11 +331,15 @@
       "rollable": false
     },
     "specialty": {
-      "templates": ["base"],
-      "skill": ""
+      "templates": [
+        "base"
+      ],
+      "ability": ""
     },
     "background": {
-      "templates": ["base"],
+      "templates": [
+        "base"
+      ],
       "value": 0
     },
     "ranged-weapons": {
@@ -436,6 +365,11 @@
       "rating": 0,
       "block-bonus": 0,
       "penalty": 0
+    },
+    "customRoll": {
+      "templates": ["base"],
+      "dice1" : "",
+      "dice2" : ""
     }
   }
 }

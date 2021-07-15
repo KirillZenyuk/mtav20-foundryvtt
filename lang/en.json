@@ -1,167 +1,142 @@
 {
     "MTAv20.Name": "Name",
-
-    "MTAv20.Health": "Health",
-    "MTAv20.Willpower": "Willpower",
-    "MTAv20.Exp": "Exp",
-    "MTAv20.Roll": "Roll",
-
-    "MTAv20.Superficial": "Superficial",
-    "MTAv20.Aggravated": "Aggravated",
-    "MTAv20.Value": "Value",
-    "MTAv20.Stains": "Stains",
-    "MTAv20.Max": "Max",
-
-    "MTAv20.Stats": "Stats",
-    "MTAv20.Disciplines": "Disciplines",
-    "MTAv20.Features": "Features",
-    "MTAv20.Blood": "Blood",
-    "MTAv20.Description": "Description",
-    "MTAv20.Equipment": "Equipment",
-    "MTAv20.Attributes": "Attributes",
-    "MTAv20.MeritsFlaws": "Merits and Flaws",
-
-    "MTAv20.Abilities": "Abilities",
-    "MTAv20.Strength": "Strength",
-    "MTAv20.Charisma": "Charisma",
-    "MTAv20.Intelligence": "Intelligence",
-    "MTAv20.Dexterity": "Dexterity",
-    "MTAv20.Manipulation": "Manipulation",
-    "MTAv20.Wits": "Wits",
-    "MTAv20.Stamina": "Stamina",
-    "MTAv20.Appearance": "Appearance",
-    "MTAv20.Perception": "Perception",
-    "MTAv20.Proficient": "Proficient",
-
-    "MTAv20.Skills": "Skills",
-    "MTAv20.Athletics": "Athletics",
-    "MTAv20.AnimalKen": "Animal Ken",
-    "MTAv20.Academics": "Academics",
-    "MTAv20.Brawl": "Brawl",
-    "MTAv20.Etiquette": "Etiquette",
-    "MTAv20.Awareness": "Awareness",
-    "MTAv20.Craft": "Craft",
-    "MTAv20.Insight": "Insight",
-    "MTAv20.Finance": "Finance",
-    "MTAv20.Drive": "Drive",
-    "MTAv20.Intimidation": "Intimidation",
-    "MTAv20.Investigation": "Investigation",
-    "MTAv20.Firearms": "Firearms",
-    "MTAv20.Leadership": "Leadership",
-    "MTAv20.Medicine": "Medicine",
-    "MTAv20.Melee": "Melee",
-    "MTAv20.Performance": "Performance",
-    "MTAv20.Occult": "Occult",
-    "MTAv20.Larceny": "Larceny",
-    "MTAv20.Persuasion": "Persuasion",
-    "MTAv20.Politics": "Politics",
-    "MTAv20.Stealth": "Stealth",
-    "MTAv20.Streetwise": "Streetwise",
-    "MTAv20.Science": "Science",
-    "MTAv20.Survival": "Survival",
-    "MTAv20.Subterfuge": "Subterfuge",
-    "MTAv20.Technology": "Technology",
-
-    "MTAv20.Nature": "Nature",
-    "MTAv20.Demeanor": "Demeanor",
-    "MTAv20.Essence": "Essence",
     "MTAv20.Affiliation": "Affiliation",
     "MTAv20.Sect": "Sect",
-    "MTAv20.Concept": "Concept",
 
-    "MTAv20.Arete": "Arete",
-    "MTAv20.Spheres": "Spheres",
+    "MTAv20.Exp": "Exp",
+    "MTAv20.Health": "Health",
     "MTAv20.Quintessence": "Quintessence",
     "MTAv20.Paradox": "Paradox",
 
+    "MTAv20.Willpower": "Willpower",
+    "MTAv20.Arete": "Arete",
+
+
+
+    "MTAv20.Stats": "Stats",
+    "MTAv20.Features": "Features",
+    "MTAv20.Description": "Description",
+    "MTAv20.Equipment": "Equipment",
+
+
+
+    "MTAv20.Attributes": "Attributes",
+
+    "MTAv20.Strength": "Strength",
+    "MTAv20.Dexterity": "Dexterity",
+    "MTAv20.Stamina": "Stamina",
+
+    "MTAv20.Charisma": "Charisma",
+    "MTAv20.Manipulation": "Manipulation",
+    "MTAv20.Appearance": "Appearance",
+
+    "MTAv20.Perception": "Perception",
+    "MTAv20.Intelligence": "Intelligence",
+    "MTAv20.Wits": "Wits",
+
+
+
+    "MTAv20.Abilities": "Abilities",
+
     "MTAv20.Alertness": "Alertness",
     "MTAv20.Arts": "Arts",
+    "MTAv20.Athletics": "Athletics",
+    "MTAv20.Awareness": "Awareness",
+    "MTAv20.Brawl": "Brawl",
     "MTAv20.Empathy": "Empathy",
     "MTAv20.Expression": "Expression",
+    "MTAv20.Intimidation": "Intimidation",
+    "MTAv20.Leadership": "Leadership",
+    "MTAv20.Streetwise": "Streetwise",
+    "MTAv20.Subterfuge": "Subterfuge",
+
     "MTAv20.Crafts": "Crafts",
-    "MTAv20.MartialArts": "MartialArts",
+    "MTAv20.Drive": "Drive",
+    "MTAv20.Etiquette": "Etiquette",
+    "MTAv20.Firearms": "Firearms",
+    "MTAv20.MartialArts": "Martial Arts",
     "MTAv20.Meditation": "Meditation",
+    "MTAv20.Melee": "Melee",
     "MTAv20.Research": "Research",
-    "MTAv20.Tecnology": "Tecnology",
+    "MTAv20.Stealth": "Stealth",
+    "MTAv20.Survival": "Survival",
+    "MTAv20.Technology": "Technology",
+
+    "MTAv20.Academics": "Academics",
     "MTAv20.Computer": "Computer",
     "MTAv20.Cosmology": "Cosmology",
     "MTAv20.Enigmas": "Enigmas",
     "MTAv20.Esoterica": "Esoterica",
+    "MTAv20.Investigation": "Investigation",
     "MTAv20.Law": "Law",
+    "MTAv20.Medicine": "Medicine",
+    "MTAv20.Occult": "Occult",
+    "MTAv20.Politics": "Politics",
+    "MTAv20.Science": "Science",
+
+
+
+    "MTAv20.Spheres": "Spheres",
 
     "MTAv20.Correspondence": "Correspondence",
     "MTAv20.Entropy": "Entropy",
     "MTAv20.Forces": "Forces",
+
     "MTAv20.Life": "Life",
     "MTAv20.Matter": "Matter",
     "MTAv20.Mind": "Mind",
+
     "MTAv20.Prime": "Prime",
     "MTAv20.Spirit": "Spirit",
     "MTAv20.Time": "Time",
 
-    "MTAv20.RollingArete": "Rolling Arete",
+
 
     "MTAv20.Specialties": "Specialties",
+    "MTAv20.CustomRolls": "Custom Rolls",
+
     "MTAv20.Specialty": "Specialty",
+    "MTAv20.Ability": "Ability",
+    "MTAv20.Attribute": "Attribute",
+
+
+
     "MTAv20.Backgrounds": "Backgrounds",
     "MTAv20.Background": "Background",
-    "MTAv20.Skill": "Skill",
-    "MTAv20.AddItem": "Add",
+
+    "MTAv20.MeritsFlaws": "Merits and Flaws",
+    "MTAv20.Merit": "Merit",
+    "MTAv20.Flaw": "Flaw",
+    "MTAv20.FeatureType": "Feature Type",
+
+
+
+    "MTAv20.Concept": "Concept",
+    "MTAv20.Chronicle": "Chronicle",
+    "MTAv20.Nature": "Nature",
+    "MTAv20.Demeanor": "Demeanor",
+    "MTAv20.Essence": "Essence",
+    "MTAv20.Wonders": "Wonders",
+
+    "MTAv20.Focus": "Focus",
+    "MTAv20.Routines": "Routines",
+    "MTAv20.Possessions": "Possessions",
+
+    "MTAv20.Biography": "Biography",
+
+    "MTAv20.Notes": "Notes",
+
+
+    "MTAv20.Rolling": "Rolling",
+    "MTAv20.SelectAttribute": "Select Attribute",
+    "MTAv20.Difficulty": "Difficulty:",
+    "MTAv20.Modifier": "Modifier:",
+    "MTAv20.Roll": "Roll",
+    "MTAv20.Cancel": "Cancel",
+
+    "MTAv20.Add": "Add",
     "MTAv20.Edit": "Edit",
     "MTAv20.Delete": "Delete",
 
-    "MTAv20.Focus": "Focus",
-    "MTAv20.Wonders": "Wonders",
-    "MTAv20.Routines": "Routines",
-    "MTAv20.Possessions": "Possessions",
-    "MTAv20.OtherTraits": "Other Traits",
-    "MTAv20.Awakening": "Awakening",
-
-    "MTAv20.Level": "Level",
-    "MTAv20.Add": "Add",
-    "MTAv20.AddPower": "Add",
-
-    "MTAv20.AddFeat": "Add",
-    "MTAv20.Merit": "Merit",
-    "MTAv20.Flaw": "Flaw",
-    "MTAv20.Points": "Points",
-
-    "MTAv20.None": "None",
-    "MTAv20.Add1Dice": "Add 1 die",
-    "MTAv20.Add2Dice": "Add 2 dice",
-    "MTAv20.Add3Dice": "Add 3 dice",
-    "MTAv20.Add4Dice": "Add 4 dice",
-    "MTAv20.Add5Dice": "Add 5 dice",
-    "MTAv20.Add6Dice": "Add 6 dice",
-    "MTAv20.1SuperficialDamage": "1 point of Superficial damage",
-    "MTAv20.2SuperficialDamage": "2 points of Superficial damage",
-    "MTAv20.3SuperficialDamage": "3 points of Superficial damage",
-    "MTAv20.4SuperficialDamage": "4 points of Superficial damage",
-    "MTAv20.5SuperficialDamage": "5 points of Superficial damage",
-    "MTAv20.Level1": "Level 1",
-    "MTAv20.Level2": "Level 2 and below",
-    "MTAv20.Level3": "Level 3 and below",
-    "MTAv20.Level4": "Level 4 and below",
-    "MTAv20.Level5": "Level 5 and below",
-    "MTAv20.NoEffect": "No effect",
-
-    "MTAv20.Chronicle": "Chronicle",
-    "MTAv20.Ambition": "Ambition",
-    "MTAv20.Desire": "Desire",
-    "MTAv20.ChronicleTenets": "Chronicle Tenets",
-    "MTAv20.TouchstonesAndConvictions": "Touchstones & Convictions",
-    "MTAv20.Biography": "Biography",
-
-    "MTAv20.System": "System",
-    "MTAv20.Rollable": "Rollable",
-    "MTAv20.FeatureType": "Feature Type",
-
-    "MTAv20.RollingWillpower": "Rolling Willpower",
-    "MTAv20.CriticalSuccess": "Critical Success!",
-    "MTAv20.Successes": "Successes",
-    "MTAv20.Modifier": "Modifier?",
-    "MTAv20.Difficulty": "Difficulty?",
-    "MTAv20.Rolling": "Rolling",
-    "MTAv20.Cancel": "Cancel",
-    "MTAv20.SelectAbility": "Select Ability"
+    "MTAv20.Points": "Points"
 }

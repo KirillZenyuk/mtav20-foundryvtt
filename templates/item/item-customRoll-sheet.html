@@ -3,7 +3,7 @@
         <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" alt="Item Image" />
         <div class="header-fields">
             <h1 class="charname"><input name="name" type="text" value="{{item.name}}"
-                                        placeholder="{{localize 'MTAv20.Name'}}" /></h1>
+                    placeholder="{{localize 'MTAv20.Name'}}" /></h1>
         </div>
     </header>
 
@@ -15,7 +15,6 @@
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
-        {{log  data}}
 
         {{!-- Description Tab --}}
         <div class="tab" data-group="primary" data-tab="description">
@@ -26,9 +25,15 @@
         <div class="tab attributes" data-group="primary" data-tab="attributes">
             {{!-- As you add new fields, add them in here! --}}
             <div class="resource grid grid-2col flex-center">
+                <label class="resource-label">{{localize "MTAv20.Attribute"}}: </label>
+                <select name="data.dice1" data-type="String">
+                    {{#select data.data.dice1}}
+                    {{> "systems/mtav20/templates/item/parts/attributes.html"}}
+                    {{/select}}
+                </select>
                 <label class="resource-label">{{localize "MTAv20.Ability"}}: </label>
-                <select name="data.ability" data-type="String">
-                    {{#select data.data.ability}}
+                <select name="data.dice2" data-type="String">
+                    {{#select data.data.dice2}}
                     {{> "systems/mtav20/templates/item/parts/abilities.html"}}
                     {{/select}}
                 </select>
