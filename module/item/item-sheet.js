@@ -8,7 +8,7 @@ export class MageItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions () {
     return mergeObject(super.defaultOptions, {
-      classes: ['MTAv20', 'sheet', 'item'],
+      classes: ['mtav20', 'sheet', 'item'],
       width: 520,
       height: 480,
       tabs: [{ navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'description' }]
@@ -17,7 +17,7 @@ export class MageItemSheet extends ItemSheet {
 
   /** @override */
   get template () {
-    const path = 'systems/MTAv20/templates/item'
+    const path = 'systems/mtav20/templates/item'
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.html`;
 

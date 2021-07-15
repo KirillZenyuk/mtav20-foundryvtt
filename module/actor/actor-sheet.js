@@ -13,8 +13,8 @@ export class MageActorSheet extends ActorSheet {
     /** @override */
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            classes: ['MTAv20', 'sheet', 'actor'],
-            template: 'systems/mtav20/templates/actor/mtav20-sheet.html',
+            classes: ['mtav20', 'sheet', 'actor'],
+            template: 'systems/mtav20/templates/actor/actor-sheet.html',
             width: 1000,
             height: 900,
             tabs: [{navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'stats'}]

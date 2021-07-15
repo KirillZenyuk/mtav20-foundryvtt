@@ -154,24 +154,24 @@
 }
 
 /* New Styles */
-.MTAv20 .window-content {
+.mtav20 .window-content {
   background: #faf5ed;
   font-family: "cormorantLight", sans-serif;
   font-weight: 600;
 }
 
-.MTAv20 .profile-img,
-.MTAv20 .item-image img {
+.mtav20 .profile-img,
+.mtav20 .item-image img {
   background: #0B108C;
 }
 
-.MTAv20 input {
+.mtav20 input {
   font-family: initial;
   background: white;
   border: 1px solid #e0dede;
 }
 
-.MTAv20 button.rollable {
+.mtav20 button.rollable {
   background: #0B108C;
   color: white;
   font-family: "cormorantlight", sans-serif;
@@ -179,21 +179,21 @@
   border: none;
 }
 
-.MTAv20 .resource-label {
+.mtav20 .resource-label {
   font-weight: bold;
 }
 
-.MTAv20 .window-content .resource-label {
+.mtav20 .window-content .resource-label {
   text-transform: initial;
   font-size: 16px;
 }
 
-.MTAv20 .window-content .attributes .attribute .resource-label {
+.mtav20 .window-content .attributes .attribute .resource-label {
   font-weight: bold;
   font-size: 18px;
 }
 
-.MTAv20 .window-content nav.sheet-tabs {
+.mtav20 .window-content nav.sheet-tabs {
   background: #e6ded0;
   color: #0B108C;
   font-size: 16px;
@@ -202,22 +202,22 @@
   height: 41px;
 }
 
-.MTAv20 .window-content nav.sheet-tabs a.item.active {
+.mtav20 .window-content nav.sheet-tabs a.item.active {
   background: #faf5ed;
   text-decoration: none;
 }
 
-.MTAv20 .window-content .header-fields .resource {
+.mtav20 .window-content .header-fields .resource {
   border: 1px solid #d6d6d2;
   border-radius: 5px;
 }
 
-.MTAv20 .window-content .attributes,
-.MTAv20.sheet.actor .window-content .abilities {
+.mtav20 .window-content .attributes,
+.mtav20.sheet.actor .window-content .abilities {
   border: none;
 }
 
-.MTAv20 .window-content .sheet-body .tab > .resource-label {
+.mtav20 .window-content .sheet-body .tab > .resource-label {
   color: #0B108C;
   border-bottom: 1px solid #0B108C;
   width: 100%;
@@ -225,13 +225,13 @@
   text-transform: uppercase;
 }
 
-/* Styles limited to MTAv20 sheets */
+/* Styles limited to mtav20 sheets */
 
-/* .MTAv20 .item-form {
+/* .mtav20 .item-form {
   font-family: "Roboto", sans-serif;
 } */
 
-.MTAv20 .sheet-header {
+.mtav20 .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 220px;
   flex: 0 0 220px;
@@ -251,7 +251,7 @@
   margin-bottom: 0px;
 }
 
-.MTAv20 .sheet-header .profile-img {
+.mtav20 .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
   flex: 0 0 100px;
@@ -262,75 +262,75 @@
   margin-right: 10px;
 }
 
-.MTAv20 .sheet-header .header-fields {
+.mtav20 .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.MTAv20 .sheet-header h1.charname {
+.mtav20 .sheet-header h1.charname {
   height: 50px;
   padding: 0;
   margin: 5px 0;
   border-bottom: 0;
 }
 
-.MTAv20 .sheet-header h1.charname input {
+.mtav20 .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.MTAv20 .sheet-tabs {
+.mtav20 .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
 
-.MTAv20 .sheet-body,
-.MTAv20 .sheet-body .tab,
-.MTAv20 .sheet-body .tab .editor {
+.mtav20 .sheet-body,
+.mtav20 .sheet-body .tab,
+.mtav20 .sheet-body .tab .editor {
   height: 100%;
 
   /* min-height: 100px; */
 }
 
-.MTAv20 .sheet-body .tab .half-height {
+.mtav20 .sheet-body .tab .half-height {
   height: 50%;
 }
 
-.MTAv20 .tox .tox-editor-container {
+.mtav20 .tox .tox-editor-container {
   background: #fff;
 }
 
-.MTAv20 .tox .tox-edit-area {
+.mtav20 .tox .tox-edit-area {
   padding: 0 8px;
 }
 
-.MTAv20 .tabs {
+.mtav20 .tabs {
   height: 40px;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
 }
 
-.MTAv20 .tabs .item {
+.mtav20 .tabs .item {
   line-height: 40px;
   font-weight: bold;
 }
 
-.MTAv20 .tabs .item.active {
+.mtav20 .tabs .item.active {
   text-decoration: underline;
   text-shadow: none;
 }
 
-.MTAv20 .items-list {
+.mtav20 .items-list {
   list-style: none;
   margin: 7px 0;
   padding: 0;
   overflow-y: auto;
 }
 
-.MTAv20 .items-list .item-header {
+.mtav20 .items-list .item-header {
   font-weight: bold;
   min-height: 30px;
   line-height: 24px;
@@ -339,44 +339,44 @@
   color: #0B108C;
 }
 
-.MTAv20 .items-list .item {
+.mtav20 .items-list .item {
   min-height: 30px;
   line-height: 24px;
   padding: 3px 0;
   border-bottom: 1px solid #bbb;
 }
 
-.MTAv20 .items-list .item .item-image {
+.mtav20 .items-list .item .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 24px;
   flex: 0 0 24px;
   margin-right: 5px;
 }
 
-.MTAv20 .items-list .item img {
+.mtav20 .items-list .item img {
   display: block;
 }
 
-.MTAv20 .items-list .item-name {
+.mtav20 .items-list .item-name {
   margin: 0;
   font-weight: 600;
 }
 
-.MTAv20 .items-list .item-controls {
+.mtav20 .items-list .item-controls {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 86px;
   flex: 0 0 86px;
   text-align: right;
 }
 
-.MTAv20 .items-list .collapsible:hover,
-.MTAv20 .items-list .collapsible:focus {
+.mtav20 .items-list .collapsible:hover,
+.mtav20 .items-list .collapsible:focus {
   color: #000;
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
 
-.MTAv20 .items-list .content {
+.mtav20 .items-list .content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -385,7 +385,7 @@
 
 /* Resource boxes CSS */
 
-.MTAv20 .resource-value .resource-value-step {
+.mtav20 .resource-value .resource-value-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -394,11 +394,11 @@
   cursor: pointer;
 }
 
-.MTAv20 .resource-value .resource-value-step.active {
+.mtav20 .resource-value .resource-value-step.active {
   background-color: #0B108C;
 }
 
-.MTAv20 .resource-value .resource-value-empty {
+.mtav20 .resource-value .resource-value-empty {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -427,7 +427,7 @@
 }
 
 /* Resource boxes 1 CSS */
-.MTAv20 .resource-counter .resource-counter-step {
+.mtav20 .resource-counter .resource-counter-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -435,11 +435,11 @@
   cursor: pointer;
 }
 
-.MTAv20 .resource-counter .resource-counter-step[data-state="-"] {
+.mtav20 .resource-counter .resource-counter-step[data-state="-"] {
   background-color: #0B108C;
 }
 
-.MTAv20 .resource-counter .resource-counter-step[data-state="/"] {
+.mtav20 .resource-counter .resource-counter-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -452,7 +452,7 @@
     );
 }
 
-.MTAv20 .resource-counter .resource-counter-step[data-state="x"] {
+.mtav20 .resource-counter .resource-counter-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -475,7 +475,7 @@
 }
 
 /* Resource boxes 2 CSS */
-.MTAv20 .resource-counter .resource-counter2-step {
+.mtav20 .resource-counter .resource-counter2-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -484,11 +484,11 @@
   border-radius: 50%;
 }
 
-.MTAv20 .resource-counter .resource-counter2-step[data-state="-"] {
+.mtav20 .resource-counter .resource-counter2-step[data-state="-"] {
   background-color: #0B108C;
 }
 
-.MTAv20 .resource-counter .resource-counter2-step[data-state="/"] {
+.mtav20 .resource-counter .resource-counter2-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -501,7 +501,7 @@
     );
 }
 
-.MTAv20 .resource-counter .resource-counter2-step[data-state="x"] {
+.mtav20 .resource-counter .resource-counter2-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -524,7 +524,7 @@
 }
 
 /* Resource boxes 3 CSS */
-.MTAv20 .resource-counter .resource-counter3-step {
+.mtav20 .resource-counter .resource-counter3-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -532,11 +532,11 @@
   cursor: pointer;
 }
 
-.MTAv20 .resource-counter .resource-counter3-step[data-state="-"] {
+.mtav20 .resource-counter .resource-counter3-step[data-state="-"] {
   background-color: rgb(0, 0, 0);
 }
 
-.MTAv20 .resource-counter .resource-counter3-step[data-state="/"] {
+.mtav20 .resource-counter .resource-counter3-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -549,7 +549,7 @@
     );
 }
 
-.MTAv20 .resource-counter .resource-counter3-step[data-state="x"] {
+.mtav20 .resource-counter .resource-counter3-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -572,7 +572,7 @@
 }
 
 /* Resource boxes symbols CSS */
-.MTAv20 .resource-counter-syb .resource-counter-syb-step {
+.mtav20 .resource-counter-syb .resource-counter-syb-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -580,7 +580,7 @@
   cursor: pointer;
 }
 
-.MTAv20 .resource-counter-syb .resource-counter-syb-step[data-state="/"] {
+.mtav20 .resource-counter-syb .resource-counter-syb-step[data-state="/"] {
   background:
     linear-gradient(
       135deg,
@@ -593,7 +593,7 @@
     );
 }
 
-.MTAv20 .resource-counter-syb .resource-counter-syb-step[data-state="x"] {
+.mtav20 .resource-counter-syb .resource-counter-syb-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -616,7 +616,7 @@
 }
 
 /* Resource boxes 2 color-flags for Quintessence and Paradox CSS */
-.MTAv20 .resource-counter-2cf .resource-counter-2cf-step {
+.mtav20 .resource-counter-2cf .resource-counter-2cf-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -624,16 +624,16 @@
   cursor: pointer;
 }
 
-.MTAv20 .resource-counter-2cf .resource-counter-2cf-step[data-state="-"] {
+.mtav20 .resource-counter-2cf .resource-counter-2cf-step[data-state="-"] {
   background-color: rgb(28, 224, 238);
 }
 
-.MTAv20 .resource-counter-2cf .resource-counter-2cf-step[data-state="/"] {
+.mtav20 .resource-counter-2cf .resource-counter-2cf-step[data-state="/"] {
   background-color: rgb(0, 0, 0);
 }
 
 /* Resource box Buttons CSS */
-.MTAv20 .resource-button {
+.mtav20 .resource-button {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -642,7 +642,7 @@
   border-radius: 50%;
 }
 
-.MTAv20 .resource-button[data-state="+"] {
+.mtav20 .resource-button[data-state="+"] {
   background:
     linear-gradient(
       90deg,
@@ -664,7 +664,7 @@
   );
 }
 
-.MTAv20 .resource-button[data-state="-"] {
+.mtav20 .resource-button[data-state="-"] {
   background:
     linear-gradient(
       180deg,
@@ -678,7 +678,7 @@
 }
 
 /* Resource boxe Vitality CSS */
-.MTAv20 .resource-counter .resource-vitality-step {
+.mtav20 .resource-counter .resource-vitality-step {
   height: 14px;
   width: 14px;
   border: 1px solid black;
@@ -686,7 +686,7 @@
   cursor: pointer;
 }
 
-.MTAv20 .resource-counter .resource-vitality-step[data-state="-"] {
+.mtav20 .resource-counter .resource-vitality-step[data-state="-"] {
   background:
     linear-gradient(
       135deg,
@@ -699,7 +699,7 @@
     );
 }
 
-.MTAv20 .resource-counter .resource-vitality-step[data-state="/"] {
+.mtav20 .resource-counter .resource-vitality-step[data-state="/"] {
   background:
     linear-gradient(
       45deg,
@@ -721,7 +721,7 @@
     );
 }
 
-.MTAv20 .resource-counter .resource-vitality-step[data-state="x"] {
+.mtav20 .resource-counter .resource-vitality-step[data-state="x"] {
   background:
     linear-gradient(
       45deg,
@@ -752,16 +752,16 @@
     );
 }
 
-.MTAv20 .flex-group-center:not(.flexrow) .resource-value,
-.MTAv20 .flex-group-center:not(.flexrow) .resource-counter-syb,
-.MTAv20 .flex-group-center:not(.flexrow) .resource-counter-2cf,
-.MTAv20 .flex-group-center:not(.flexrow) .resource-buttons,
-.MTAv20 .flex-group-center:not(.flexrow) .resource-vitality,
-.MTAv20 .flex-group-center:not(.flexrow) .resource-counter {
+.mtav20 .flex-group-center:not(.flexrow) .resource-value,
+.mtav20 .flex-group-center:not(.flexrow) .resource-counter-syb,
+.mtav20 .flex-group-center:not(.flexrow) .resource-counter-2cf,
+.mtav20 .flex-group-center:not(.flexrow) .resource-buttons,
+.mtav20 .flex-group-center:not(.flexrow) .resource-vitality,
+.mtav20 .flex-group-center:not(.flexrow) .resource-counter {
   margin-top: 5px;
 }
 
-.MTAv20 .tab.disciplines .resource-value {
+.mtav20 .tab.disciplines .resource-value {
   margin-top: 2px;
 }
 

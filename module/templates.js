@@ -4,7 +4,7 @@
  * @return {Promise}
  */
 export const preloadHandlebarsTemplates = async function () {
-  console.log('Schrecknet : loading subroutines')
+  console.log('MAGE: THE ASCENSION | Loading subroutines')
   // Define template paths to load
   const templatePaths = [
     // Item Sheet Partials

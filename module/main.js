@@ -1,20 +1,17 @@
 /* global CONFIG, Handlebars, Hooks, Actors, ActorSheet, ChatMessage, Items, ItemSheet, Macro, game, ui */
 
-// Import Modules
 import { preloadHandlebarsTemplates } from './templates.js'
 import { MageActor } from './actor/actor.js'
-import { MageActorSheet } from './actor/mtav20-sheet.js'
+import { MageActorSheet } from './actor/actor-sheet.js'
 import { MageItem } from './item/item.js'
 import { MageItemSheet } from './item/item-sheet.js'
-import { VampireDie, VampireHungerDie } from './dice/dice.js'
 
 Hooks.once('init', async function () {
-  console.log('Initializing Schrecknet...')
+  console.log('MAGE: THE ASCENSION | System initializing')
 
   game.MTAv20 = {
     MageActor,
-    MageItem,
-    rollItemMacro
+    MageItem
   }
 
   /**
@@ -22,20 +19,18 @@ Hooks.once('init', async function () {
      * @type {String}
      */
   CONFIG.Combat.initiative = {
-    formula: '1d20'
+    formula: '1d10'
   }
 
   // Define custom Entity classes
   CONFIG.Actor.documentClass = MageActor
   CONFIG.Item.documentClass = MageItem
-  CONFIG.Dice.terms.v = VampireDie
-  CONFIG.Dice.terms.h = VampireHungerDie
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet)
-  Actors.registerSheet('MTAv20', MageActorSheet, { makeDefault: true })
+  Actors.registerSheet('mtav20', MageActorSheet, { makeDefault: true })
   Items.unregisterSheet('core', ItemSheet)
-  Items.registerSheet('MTAv20', MageItemSheet, { makeDefault: true })
+  Items.registerSheet('mtav20', MageItemSheet, { makeDefault: true })
 
   preloadHandlebarsTemplates()
 
@@ -141,45 +136,6 @@ Hooks.once('init', async function () {
 Hooks.once('ready', async function () {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on('hotbarDrop', (bar, data, slot) => createVampireMacro(data, slot))
-})
-
-Hooks.once('diceSoNiceReady', (dice3d) => {
-  dice3d.addSystem({ id: 'MTAv20', name: 'VtM5e' }, true)
-  dice3d.addDicePreset({
-    type: 'dv',
-    labels: [
-      'systems/MTAv20/assets/images/normal-fail-dsn.png',
-      'systems/MTAv20/assets/images/normal-fail-dsn.png',
-      'systems/MTAv20/assets/images/normal-fail-dsn.png',
-      'systems/MTAv20/assets/images/normal-fail-dsn.png',
-      'systems/MTAv20/assets/images/normal-fail-dsn.png',
-      'systems/MTAv20/assets/images/normal-success-dsn.png',
-      'systems/MTAv20/assets/images/normal-success-dsn.png',
-      'systems/MTAv20/assets/images/normal-success-dsn.png',
-      'systems/MTAv20/assets/images/normal-success-dsn.png',
-      'systems/MTAv20/assets/images/normal-crit-dsn.png'
-    ],
-    colorset: 'white',
-    fontScale: 0.5,
-    system: 'MTAv20'
-  })
-  dice3d.addDicePreset({
-    type: 'dh',
-    labels: [
-      'systems/MTAv20/assets/images/bestial-fail-dsn.png',
-      'systems/MTAv20/assets/images/red-fail-dsn.png',
-      'systems/MTAv20/assets/images/red-fail-dsn.png',
-      'systems/MTAv20/assets/images/red-fail-dsn.png',
-      'systems/MTAv20/assets/images/red-fail-dsn.png',
-      'systems/MTAv20/assets/images/red-success-dsn.png',
-      'systems/MTAv20/assets/images/red-success-dsn.png',
-      'systems/MTAv20/assets/images/red-success-dsn.png',
-      'systems/MTAv20/assets/images/red-success-dsn.png',
-      'systems/MTAv20/assets/images/red-crit-dsn.png'
-    ],
-    colorset: 'black',
-    system: 'MTAv20'
-  })
 })
 
 /* -------------------------------------------- */
