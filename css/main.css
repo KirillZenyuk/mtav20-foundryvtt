@@ -1,228 +1,248 @@
+/*
+    COLORS:
+    red                 #F44336
+    purple              #9C27B0
+    purple lighten-2    #BA68C8
+    deep-purple         #673AB7
+    indigo              #3F51B5
+    indigo lighten-1    #5C6BC0
+    indigo darken-1     #3949AB
+    blue                #2196F3
+    blue lighten-2      #64B5F6
+    blue darken-2       #1976D2
+    blue darken-3       #1565C0
+    blue darken-4       #0D47A1
+    blue accent-2       #448AFF
+    light-blue          #03A9F4
+    light-blue darken-3 #0277BD
+    light-blue accent-4 #0091EA
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;800&family=Roboto:wght@300;400;500&display=swap");
 
 /* Fonts */
 @font-face {
-  font-family: "cormorantLight";
-  src: url("../assets/fonts/Cormorant-Light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "cormorantLight";
+    src: url("../assets/fonts/Cormorant-Light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Global styles */
 .window-app {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .rollable:hover,
 .rollable:focus,
 .vrollable:hover,
 .vrollable:focus {
-  color: #000;
-  text-shadow: 0 0 10px red;
-  cursor: pointer;
+    color: #000;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
 }
 
 .attribute-rollable:hover,
 .attribute-rollable:focus,
 .ability-rollable:hover,
 .ability-rollable:focus {
-  color: #000;
-  text-shadow: 0 0 10px blue;
-  cursor: pointer;
+    color: #000;
+    text-shadow: 0 0 10px blue;
+    cursor: pointer;
 }
 
 .custom-rollable:hover,
 .custom-rollable:focus {
-  color: #000;
-  text-shadow: 0 0 10px red;
-  cursor: pointer;
+    color: #000;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
 }
 
 .grid,
 .grid-2col {
-  display: grid;
-  grid-column: span 2 / span 2;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin: 5px 0;
-  padding: 0;
+    display: grid;
+    grid-column: span 2 / span 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 5px 0;
+    padding: 0;
 }
 
 .grid-3col {
-  grid-column: span 3 / span 3;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column: span 3 / span 3;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-4col {
-  grid-column: span 4 / span 4;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column: span 4 / span 4;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-5col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-column: span 5 / span 5;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-6col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-column: span 5 / span 5;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-7col {
-  grid-column: span 7 / span 7;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-column: span 7 / span 7;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .grid-8col {
-  grid-column: span 8 / span 8;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-column: span 8 / span 8;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
 .grid-9col {
-  grid-column: span 9 / span 9;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-column: span 9 / span 9;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
 }
 
 .grid-10col {
-  grid-column: span 10 / span 10;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-column: span 10 / span 10;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .grid-11col {
-  grid-column: span 11 / span 11;
-  grid-template-columns: repeat(11, minmax(0, 1fr));
+    grid-column: span 11 / span 11;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
 }
 
 .grid-12col {
-  grid-column: span 12 / span 12;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-column: span 12 / span 12;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  padding: 5px;
-  border: 1px solid #0B108C;
-  border-radius: 5px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #0B108C;
+    border-radius: 5px;
 }
 
 .flex-group-left {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: left;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .flex-group-right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  text-align: right;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: right;
 }
 
 .flex-center {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .flex-left {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: left;
-  text-align: left;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: left;
+    text-align: left;
 }
 
 .flex-between {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 /* New Styles */
 .mtav20 .window-content {
-  background: #faf5ed;
-  font-family: "cormorantLight", sans-serif;
-  font-weight: 600;
+    background: #faf5ed;
+    font-family: "cormorantLight", sans-serif;
+    font-weight: 600;
 }
 
 .mtav20 .profile-img,
 .mtav20 .item-image img {
-  background: #0B108C;
+    background: #0B108C;
 }
 
 .mtav20 input {
-  font-family: initial;
-  background: white;
-  border: 1px solid #e0dede;
+    font-family: initial;
+    background: white;
+    border: 1px solid #e0dede;
 }
 
 .mtav20 button.rollable {
-  background: #0B108C;
-  color: white;
-  font-family: "cormorantlight", sans-serif;
-  font-weight: bold;
-  border: none;
+    background: #0B108C;
+    color: white;
+    font-family: "cormorantlight", sans-serif;
+    font-weight: bold;
+    border: none;
 }
 
 .mtav20 .resource-label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .mtav20 .window-content .resource-label {
-  text-transform: initial;
-  font-size: 16px;
+    text-transform: initial;
+    font-size: 16px;
 }
 
 .mtav20 .window-content .attributes .attribute .resource-label {
-  font-weight: bold;
-  font-size: 18px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .mtav20 .window-content nav.sheet-tabs {
-  background: #e6ded0;
-  color: #0B108C;
-  font-size: 16px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  height: 41px;
+    background: #e6ded0;
+    color: #0B108C;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 41px;
 }
 
 .mtav20 .window-content nav.sheet-tabs a.item.active {
-  background: #faf5ed;
-  text-decoration: none;
+    background: #faf5ed;
+    text-decoration: none;
 }
 
 .mtav20 .window-content .header-fields .resource {
-  border: 1px solid #d6d6d2;
-  border-radius: 5px;
+    border: 1px solid #d6d6d2;
+    border-radius: 5px;
 }
 
 .mtav20 .window-content .attributes,
 .mtav20.sheet.actor .window-content .abilities {
-  border: none;
+    border: none;
 }
 
 .mtav20 .window-content .sheet-body .tab > .resource-label {
-  color: #0B108C;
-  border-bottom: 1px solid #0B108C;
-  width: 100%;
-  display: block;
-  text-transform: uppercase;
+    color: #0B108C;
+    border-bottom: 1px solid #0B108C;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
 }
 
 /* Styles limited to mtav20 sheets */
@@ -232,523 +252,509 @@
 } */
 
 .mtav20 .sheet-header {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 220px;
-  flex: 0 0 220px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-bottom: 0px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 220px;
+    flex: 0 0 220px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 0px;
 }
 
 .mtav20 .sheet-header .profile-img {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
-  flex: 0 0 100px;
-  min-height: 50px;
-  max-height: 205px;
-  height: auto;
-  width: 100px;
-  margin-right: 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+    min-height: 50px;
+    max-height: 205px;
+    height: auto;
+    width: 100px;
+    margin-right: 10px;
 }
 
 .mtav20 .sheet-header .header-fields {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .mtav20 .sheet-header h1.charname {
-  height: 50px;
-  padding: 0;
-  margin: 5px 0;
-  border-bottom: 0;
+    height: 50px;
+    padding: 0;
+    margin: 5px 0;
+    border-bottom: 0;
 }
 
 .mtav20 .sheet-header h1.charname input {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 .mtav20 .sheet-tabs {
-  -webkit-box-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
 }
 
 .mtav20 .sheet-body,
 .mtav20 .sheet-body .tab,
 .mtav20 .sheet-body .tab .editor {
-  height: 100%;
+    height: 100%;
 
-  /* min-height: 100px; */
+    /* min-height: 100px; */
 }
 
 .mtav20 .sheet-body .tab .half-height {
-  height: 50%;
+    height: 50%;
 }
 
 .mtav20 .tox .tox-editor-container {
-  background: #fff;
+    background: #fff;
 }
 
 .mtav20 .tox .tox-edit-area {
-  padding: 0 8px;
+    padding: 0 8px;
 }
 
 .mtav20 .tabs {
-  height: 40px;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+    height: 40px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
 
 .mtav20 .tabs .item {
-  line-height: 40px;
-  font-weight: bold;
+    line-height: 40px;
+    font-weight: bold;
 }
 
 .mtav20 .tabs .item.active {
-  text-decoration: underline;
-  text-shadow: none;
+    text-decoration: underline;
+    text-shadow: none;
 }
 
 .mtav20 .items-list {
-  list-style: none;
-  margin: 7px 0;
-  padding: 0;
-  overflow-y: auto;
+    list-style: none;
+    margin: 7px 0;
+    padding: 0;
+    overflow-y: auto;
 }
 
 .mtav20 .items-list .item-header {
-  font-weight: bold;
-  min-height: 30px;
-  line-height: 24px;
-  padding: 3px 0;
-  border-bottom: 1px solid #0B108C;
-  color: #0B108C;
+    font-weight: bold;
+    min-height: 30px;
+    line-height: 24px;
+    padding: 3px 0;
+    border-bottom: 1px solid #0B108C;
+    color: #0B108C;
 }
 
 .mtav20 .items-list .item {
-  min-height: 30px;
-  line-height: 24px;
-  padding: 3px 0;
-  border-bottom: 1px solid #bbb;
+    min-height: 30px;
+    line-height: 24px;
+    padding: 3px 0;
+    border-bottom: 1px solid #bbb;
 }
 
 .mtav20 .items-list .item .item-image {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 24px;
-  flex: 0 0 24px;
-  margin-right: 5px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 24px;
+    flex: 0 0 24px;
+    margin-right: 5px;
 }
 
 .mtav20 .items-list .item img {
-  display: block;
+    display: block;
 }
 
 .mtav20 .items-list .item-name {
-  margin: 0;
-  font-weight: 600;
+    margin: 0;
+    font-weight: 600;
 }
 
 .mtav20 .items-list .item-controls {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 86px;
-  flex: 0 0 86px;
-  text-align: right;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 86px;
+    flex: 0 0 86px;
+    text-align: right;
 }
 
 .mtav20 .items-list .collapsible:hover,
 .mtav20 .items-list .collapsible:focus {
-  color: #000;
-  text-shadow: 0 0 10px red;
-  cursor: pointer;
+    color: #000;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
 }
 
 .mtav20 .items-list .content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 /* Resource boxes CSS */
 
 .mtav20 .resource-value .resource-value-step {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .mtav20 .resource-value .resource-value-step.active {
-  background-color: #0B108C;
+    background-color: #0B108C;
 }
 
 .mtav20 .resource-value .resource-value-empty {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-  background:
-    linear-gradient(
-      45deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 /* Resource boxes 1 CSS */
 .mtav20 .resource-counter .resource-counter-step {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .mtav20 .resource-counter .resource-counter-step[data-state="-"] {
-  background-color: #0B108C;
+    background-color: #0B108C;
 }
 
 .mtav20 .resource-counter .resource-counter-step[data-state="/"] {
-  background:
-    linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 .mtav20 .resource-counter .resource-counter-step[data-state="x"] {
-  background:
-    linear-gradient(
-      45deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 /* Resource boxes 2 CSS */
 .mtav20 .resource-counter .resource-counter2-step {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .mtav20 .resource-counter .resource-counter2-step[data-state="-"] {
-  background-color: #0B108C;
+    background-color: #0B108C;
 }
 
 .mtav20 .resource-counter .resource-counter2-step[data-state="/"] {
-  background:
-    linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 .mtav20 .resource-counter .resource-counter2-step[data-state="x"] {
-  background:
-    linear-gradient(
-      45deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 /* Resource boxes 3 CSS */
 .mtav20 .resource-counter .resource-counter3-step {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .mtav20 .resource-counter .resource-counter3-step[data-state="-"] {
-  background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 .mtav20 .resource-counter .resource-counter3-step[data-state="/"] {
-  background:
-    linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 .mtav20 .resource-counter .resource-counter3-step[data-state="x"] {
-  background:
-    linear-gradient(
-      45deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 /* Resource boxes symbols CSS */
 .mtav20 .resource-counter-syb .resource-counter-syb-step {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .mtav20 .resource-counter-syb .resource-counter-syb-step[data-state="/"] {
-  background:
-    linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 .mtav20 .resource-counter-syb .resource-counter-syb-step[data-state="x"] {
-  background:
-    linear-gradient(
-      45deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 /* Resource boxes 2 color-flags for Quintessence and Paradox CSS */
 .mtav20 .resource-counter-2cf .resource-counter-2cf-step {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .mtav20 .resource-counter-2cf .resource-counter-2cf-step[data-state="-"] {
-  background-color: rgb(28, 224, 238);
+    background-color: rgb(28, 224, 238);
 }
 
 .mtav20 .resource-counter-2cf .resource-counter-2cf-step[data-state="/"] {
-  background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Resource box Buttons CSS */
 .mtav20 .resource-button {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .mtav20 .resource-button[data-state="+"] {
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent 43%,
-      green 45%,
-      green 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            90deg,
+            transparent 0%,
+            transparent 43%,
+            green 45%,
+            green 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      180deg,
-      transparent 0%,
-      transparent 43%,
-      green 45%,
-      green 55%,
-      transparent 57%,
-      transparent 100%
-  );
+            180deg,
+            transparent 0%,
+            transparent 43%,
+            green 45%,
+            green 55%,
+            transparent 57%,
+            transparent 100%
+    );
 }
 
 .mtav20 .resource-button[data-state="-"] {
-  background:
-    linear-gradient(
-      180deg,
-      transparent 0%,
-      transparent 43%,
-      red 45%,
-      red 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            180deg,
+            transparent 0%,
+            transparent 43%,
+            red 45%,
+            red 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 /* Resource boxe Vitality CSS */
 .mtav20 .resource-counter .resource-vitality-step {
-  height: 14px;
-  width: 14px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .mtav20 .resource-counter .resource-vitality-step[data-state="-"] {
-  background:
-    linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 .mtav20 .resource-counter .resource-vitality-step[data-state="/"] {
-  background:
-    linear-gradient(
-      45deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
 .mtav20 .resource-counter .resource-vitality-step[data-state="x"] {
-  background:
-    linear-gradient(
-      45deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+    background: linear-gradient(
+            45deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            90deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     ),
     linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 43%,
-      black 45%,
-      black 55%,
-      transparent 57%,
-      transparent 100%
+            135deg,
+            transparent 0%,
+            transparent 43%,
+            black 45%,
+            black 55%,
+            transparent 57%,
+            transparent 100%
     );
 }
 
@@ -758,36 +764,36 @@
 .mtav20 .flex-group-center:not(.flexrow) .resource-buttons,
 .mtav20 .flex-group-center:not(.flexrow) .resource-vitality,
 .mtav20 .flex-group-center:not(.flexrow) .resource-counter {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .mtav20 .tab.disciplines .resource-value {
-  margin-top: 2px;
+    margin-top: 2px;
 }
 
 /* ChatMessage CSS */
 
 .roll-label {
-  font-weight: bold;
-  font-size: 130%;
+    font-weight: bold;
+    font-size: 130%;
 }
 
 .roll-label .danger {
-  color: #831515;
+    color: #831515;
 }
 
 .roll-label .success {
-  color: #18520b;
+    color: #18520b;
 }
 
 .roll-content {
-  font-size: 120%;
+    font-size: 120%;
 }
 
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .roll-img {
-  max-width: 10%;
+    max-width: 10%;
 }
