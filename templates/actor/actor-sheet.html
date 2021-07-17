@@ -263,11 +263,11 @@
                 </li>
                 {{#each actor.backgrounds as |item id|}}
                 <li class="item flexrow" data-item-id="{{item._id}}">
-                    <label for="data.data.item.{{id}}.value" class="resource-label"
+                    <label for="data.data.item.{{id}}.value" class="resource-label collapsible"
                            data-roll="{{item.data.value}}"
                            data-label="{{item.name}}">{{item.name}}</label>
-                    <div class="resource-value" data-value="{{item.data.value}}" data-name="items.{{id}}.data.value">
-                        <!-- <span class="resource-value-empty"></span> -->
+                    <div class="resource-value" data-value="{{item.data.value}}" data-name="items.{{item._id}}">
+                        <span class="resource-value-empty"></span>
                         {{#numLoop 5}}
                         <span class="resource-value-step" data-index="{{this}}"></span>
                         {{/numLoop}}

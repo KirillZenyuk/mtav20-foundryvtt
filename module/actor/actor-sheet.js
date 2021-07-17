@@ -538,11 +538,15 @@ export class MageActorSheet extends ActorSheet {
      * RESOURCES
      ********************/
 
-    // There's gotta be a better way to do this but for the life of me I can't figure it out
     _assignToActorField(fields, value) {
         const actorData = duplicate(this.actor)
-        const lastField = fields.pop()
-        fields.reduce((data, field) => data[field], actorData)[lastField] = value
+        // If fields.length === 2 then it is an item (data provided with key to find item in the array)
+        if (fields.length === 2 && fields[0] === 'items') {
+            actorData.items.find(item => item._id === fields[1]).data.value = value
+        } else {
+            const lastField = fields.pop()
+            fields.reduce((data, field) => data[field], actorData)[lastField] = value
+        }
         this.actor.update(actorData)
     }
 
@@ -556,6 +560,28 @@ export class MageActorSheet extends ActorSheet {
 
         steps.removeClass('active')
         this._assignToActorField(fields, 0)
+    }
+
+    _onDotCounterChange(event) {
+        event.preventDefault()
+        const element = event.currentTarget
+        const dataset = element.dataset
+        const index = Number(dataset.index)
+        const parent = $(element.parentNode)
+        const fieldStrings = parent[0].dataset.name
+        const fields = fieldStrings.split('.')
+        const steps = parent.find('.resource-value-step')
+        if (index < 0 || index > steps.length) {
+            return
+        }
+
+        steps.removeClass('active')
+        steps.each(function (i) {
+            if (i <= index) {
+                $(this).addClass('active')
+            }
+        })
+        this._assignToActorField(fields, index + 1)
     }
 
     _onSquareCounterChange(event) {
@@ -699,28 +725,6 @@ export class MageActorSheet extends ActorSheet {
                 (totalP > 0) && this._assignToActorField(['data', 'magika'], {paradox: totalP - 1})
             }
         }
-    }
-
-    _onDotCounterChange(event) {
-        event.preventDefault()
-        const element = event.currentTarget
-        const dataset = element.dataset
-        const index = Number(dataset.index)
-        const parent = $(element.parentNode)
-        const fieldStrings = parent[0].dataset.name
-        const fields = fieldStrings.split('.')
-        const steps = parent.find('.resource-value-step')
-        if (index < 0 || index > steps.length) {
-            return
-        }
-
-        steps.removeClass('active')
-        steps.each(function (i) {
-            if (i <= index) {
-                $(this).addClass('active')
-            }
-        })
-        this._assignToActorField(fields, index + 1)
     }
 
     _setupDotCounters(html) {

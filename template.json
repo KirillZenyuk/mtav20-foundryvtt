@@ -340,7 +340,7 @@
         "base"
       ],
       "featuretype": "merit",
-      "points": 0
+      "value": 0
     },
     "background": {
       "templates": [
