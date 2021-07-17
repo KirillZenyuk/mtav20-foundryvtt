@@ -201,73 +201,13 @@ export class MageActorSheet extends ActorSheet {
      ********************/
 
     /**
-     * Handle clickable rolls.
-     *
-     * @param {Event} event   The originating click event
-     * @private
-     */
-    _onRoll(event) {
-        event.preventDefault()
-        const element = event.currentTarget
-        const dataset = element.dataset
-
-        if (dataset.roll) {
-            const roll = new Roll(dataset.roll + 'dvcs>5', this.actor.data.data)
-            const rollResult = roll.evaluate()
-
-            let success = 0
-            let critSuccess = 0
-            let fail = 0
-
-            rollResult.terms[0].results.forEach((dice) => {
-                if (dice.success) {
-                    if (dice.result === 10) {
-                        critSuccess++
-                    } else {
-                        success++
-                    }
-                } else {
-                    fail++
-                }
-            })
-
-            let totalCritSuccess = 0
-            totalCritSuccess = Math.floor(critSuccess / 2)
-            const totalSuccess = (totalCritSuccess * 2) + success + critSuccess
-
-            let label = dataset.label ? `<p class="roll-label uppercase">${dataset.label}</p>` : ''
-
-            if (totalCritSuccess) {
-                label = label + `<p class="roll-content">${game.i18n.localize('MTAv20.CriticalSuccess')}</p>`
-            }
-
-            label = label + `<p class="roll-label">${game.i18n.localize('MTAv20.Successes')}: ${totalSuccess}</p>`
-
-            for (let i = 0, j = critSuccess; i < j; i++) {
-                label = label + '<img src="systems/MTAv20/assets/images/normal-crit.png" alt="Normal Crit" class="roll-img">'
-            }
-            for (let i = 0, j = success; i < j; i++) {
-                label = label + '<img src="systems/MTAv20/assets/images/normal-success.png" alt="Normal Success" class="roll-img">'
-            }
-            for (let i = 0, j = fail; i < j; i++) {
-                label = label + '<img src="systems/MTAv20/assets/images/normal-fail.png" alt="Normal Fail" class="roll-img">'
-            }
-
-            rollResult.toMessage({
-                speaker: ChatMessage.getSpeaker({actor: this.actor}),
-                flavor: label
-            })
-        }
-    }
-
-    /**
      * Handle rolls
      *
      * @param dicePool      Number of dices to roll
      * @param difficulty    Roll difficulty
      * @param modifier      Roll modifier
      * @param rollTitle     Roll title
-     * @param specialty     Is specialty?
+     * @param specialty     Is specialty roll?
      * @private
      */
     _roll(dicePool, difficulty, modifier, rollTitle = '', specialty = false) {
@@ -275,16 +215,17 @@ export class MageActorSheet extends ActorSheet {
         let flavor
         if (specialty) {
             roll = new Roll(`${dicePool + modifier}d10cs>=${difficulty}`).evaluate()
-            flavor = `<p class="roll-content">${game.i18n.localize('MTAv20.Specialty')} ${game.i18n.localize('MTAv20.Roll')}: ${game.i18n.localize(rollTitle)}</p>`
+            flavor = `<p class="roll-content">${rollTitle}</p>`
+            flavor += `<p class="roll-content roll-specialty">${game.i18n.localize('MTAv20.Specialty')}</p>`
         } else {
             roll = new Roll(`${dicePool + modifier}d10cs>=${difficulty}df=1`).evaluate()
-            flavor = `<p class="roll-content">${game.i18n.localize('MTAv20.Roll')}: ${game.i18n.localize(rollTitle)}</p>`
+            flavor = `<p class="roll-content">${rollTitle}</p>`
         }
 
         if (roll.total < 0) {
-            flavor += `<p class="roll-content roll-botch" style="color: red">Botch!</p>`
+            flavor += `<p class="roll-content roll-botch">Botch!</p>`
         } else if (roll.total === 0) {
-            flavor += `<p class="roll-content roll-total-failure" style="color: red">Total failure!</p>`
+            flavor += `<p class="roll-content roll-total-failure">Total failure!</p>`
         }
 
         roll.toMessage({
@@ -357,8 +298,8 @@ export class MageActorSheet extends ActorSheet {
                     const difficulty = parseInt(html.find('#inputDif')[0].value || 6)
                     const modifier = parseInt(html.find('#inputMod')[0].value || 0)
                     const specialty = html.find('#inputSpec')[0].checked || false
-                    const attributeName = attributeProperties.label
-                    this._roll(dicePool, difficulty, modifier, attributeName, specialty);
+                    const title = game.i18n.localize(attributeProperties.label)
+                    this._roll(dicePool, difficulty, modifier, title, specialty);
                 }
             },
             cancel: {
@@ -426,8 +367,9 @@ export class MageActorSheet extends ActorSheet {
                     const difficulty = parseInt(html.find('#inputDif')[0].value || 6)
                     const modifier = parseInt(html.find('#inputMod')[0].value || 0)
                     const specialty = html.find('#inputSpec')[0].checked || false
-                    const abilityName = abilityProperties.label
-                    this._roll(dicePool, difficulty, modifier, abilityName, specialty);
+                    const title = `${game.i18n.localize(this.actor.data.data.attributes[attribute].name)} + 
+                                   ${game.i18n.localize(abilityProperties.label)}`
+                    this._roll(dicePool, difficulty, modifier, title, specialty);
                 }
             },
             cancel: {
@@ -509,8 +451,10 @@ export class MageActorSheet extends ActorSheet {
                     const dicePool = attributePool + abilityPool
                     const difficulty = parseInt(html.find('#inputDif')[0].value || 6)
                     const modifier = parseInt(html.find('#inputMod')[0].value || 0)
-                    const abilityName = abilityProperties.name
-                    this._roll(dicePool, difficulty, modifier, abilityName, true);
+                    const title = `${abilityProperties.name}<br>
+                                   ${game.i18n.localize(this.actor.data.data.attributes[attribute].name)} + 
+                                   ${game.i18n.localize(this.actor.data.data.abilities[abilityProperties.dice2].name)}`
+                    this._roll(dicePool, difficulty, modifier, title, true);
                 }
             },
             cancel: {
@@ -570,7 +514,9 @@ export class MageActorSheet extends ActorSheet {
                     const difficulty = parseInt(html.find('#inputDif')[0].value || 6)
                     const modifier = parseInt(html.find('#inputMod')[0].value || 0)
                     const specialty = html.find('#inputSpec')[0].checked || false
-                    const title = dataset.name
+                    const title = `${dataset.name}<br>
+                                   ${game.i18n.localize(this.actor.data.data.attributes[dataset.dice1].name)} + 
+                                   ${game.i18n.localize(this.actor.data.data.abilities[dataset.dice2].name)}`
                     this._roll(dicePool, difficulty, modifier, title, specialty);
                 }
             },

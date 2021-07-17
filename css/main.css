@@ -302,13 +302,14 @@
 
 .mtav20 .sheet-header .profile-img {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 100px;
-    flex: 0 0 100px;
+    -ms-flex: 0 0 150px;
+    flex: 0 0 150px;
     min-height: 50px;
     max-height: 205px;
     height: auto;
-    width: 100px;
+    width: 150px;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 .mtav20 .sheet-header input {
@@ -816,11 +817,6 @@
     font-size: 130%;
 }
 
-.roll-botch,
-.roll-total-failure {
-    color: #C62828;
-}
-
 .roll-label .danger {
     color: #831515;
 }
@@ -830,7 +826,22 @@
 }
 
 .roll-content {
-    font-size: 120%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.roll-specialty {
+    color: #2E7D32;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.roll-botch,
+.roll-total-failure {
+    color: #C62828;
+    font-weight: bold;
+    font-size: 130%;
 }
 
 .uppercase {
