@@ -1,6 +1,6 @@
 {
   "name": "mtav20-foundryvtt",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A FoundryVTT system for Mage: The Ascension v20",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "build:css": "npm-run-all compile:sass concat:css"
   },
   "author": "Kirill Zenyuk",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "concat": "^1.0.3",
     "eslint": "^7.30.0",
