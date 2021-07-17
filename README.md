@@ -1,7 +1,7 @@
 # FoundryVTT Mage: The Ascension 20th Anniversary Edition System
 
 [![Foundry Shield 0.8.7]][Foundry URL]
-[![ISC License]][ISC URL]
+[![MIT License]][MIT URL]
 
 FoundryVTT system for Mage: The Ascension 20th Anniversary Edition.
 
@@ -19,8 +19,8 @@ Licensed MtA v20 materials will not be provided, as this is a system provided fo
 [Foundry Shield 0.8.7]: https://img.shields.io/badge/Foundry-0.8.7-accent
 [Foundry URL]: https://foundryvtt.com
 
-[ISC License]: https://img.shields.io/badge/License-ISC-blue.svg
-[ISC URL]: https://opensource.org/licenses/ISC
+[MIT License]: https://img.shields.io/badge/License-MIT-blue.svg
+[MIT URL]: https://opensource.org/licenses/MIT
 
 [ma20th]: https://github.com/renanmsouza/ma20th-foundry-vtt
 [renanmsouza]: https://github.com/renanmsouza
