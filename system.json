@@ -2,7 +2,7 @@
   "name": "mtav20",
   "title": "Mage: The Ascension 20th Anniversary Edition (mtav20)",
   "description": "FoundryVTT Mage: The Ascension 20th Anniversary Edition System",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minimumCoreVersion": "0.8.0",
   "compatibleCoreVersion": "0.8.7",
   "templateVersion": 2,
@@ -28,6 +28,6 @@
   "secondaryTokenAttribute": "",
   "url": "https://github.com/KirillZenyuk/mtav20-foundryvtt",
   "manifest": "https://raw.githubusercontent.com/KirillZenyuk/mtav20-foundryvtt/master/system.json",
-  "download": "https://github.com/KirillZenyuk/mtav20-foundryvtt/archive/refs/tags/1.0.0.zip",
+  "download": "https://github.com/KirillZenyuk/mtav20-foundryvtt/archive/refs/tags/1.0.1.zip",
   "license": "LICENSE.txt"
 }
